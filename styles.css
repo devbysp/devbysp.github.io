@@ -1,0 +1,21 @@
+/* UNDER CONSTRUCTION MESSAGE */
+.under-construction-banner {
+    background-color: #f5d5d5;
+}
+
+.under-construction-banner > p {
+    margin: 0px;
+    padding: 20px 0px;
+
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    color: #444f77;
+}
+
+/* CONTENT */
+body {
+    margin: 0px;
+}
