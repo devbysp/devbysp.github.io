@@ -6,13 +6,185 @@
             name="viewport"
             content="width=display-width, initial-scaling=1.0"
         />
-        <title>Portofolio</title>
+
+        <title>Magyari Zoltán</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="./icons/favicon.ico" />
     </head>
 
     <body>
-        <div class="under-construction-banner">
-            <p>Under construction</p>
-        </div>
+        <header>
+            <nav id="navigation-menu">
+                <!-- Instead of icon I'll use text -->
+                <!-- Font family: Mogra 400 120px -->
+                <span class="logo">MZ</span>
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Portofolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Magyari Zoltán</h1>
+                <h2>
+                    Web
+                    <strong>Developer</strong>
+                </h2>
+                <p>
+                    Here will be filled with a short introduction of my self. I
+                    write a short sentence about my expertiese, why pootential
+                    clients might be intrested in hiring me, what kind of
+                    passions, interest do I have regarding the webdevelopment.
+                </p>
+                <div class="technology-icons">
+                    <img src="./icons/html5.svg" alt="html icon" />
+                    <img src="./icons/css3.svg" alt="css icon" />
+                    <img src="./icons/js.svg" alt="javascript icon" />
+                </div>
+                <img
+                    src="./images/profile.jpg"
+                    alt="profile picture"
+                    class="profile-picture"
+                />
+            </section>
+
+            <section>
+                <h2>Portofolio</h2>
+                <div class="portofolio-container">
+                    <article class="portofolio-project">
+                        <img
+                            src="./images/project-1.jpg"
+                            alt="image of the first portofolio project"
+                        />
+                        <h3>First portofolio project title</h3>
+                        <p>
+                            Short description of the project. Maximum two
+                            scentenses.
+                        </p>
+                        <div class="technology-container">
+                            <em>HTML</em>
+                            <em>CSS</em>
+                        </div>
+                        <div class="navigation-buttons">
+                            <a href="#">Preview</a>
+                            <a href="#">Git Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="portofolio-project">
+                        <img
+                            src="./images/project-2.jpg"
+                            alt="image of the second portofolio project"
+                        />
+                        <h3>Second portofolio project title</h3>
+                        <p>
+                            Short description of the project. Maximum two
+                            scentenses.
+                        </p>
+                        <div class="technology-container">
+                            <em>HTML</em>
+                            <em>CSS</em>
+                            <em>JavaScript</em>
+                        </div>
+                        <div class="navigation-buttons">
+                            <a href="#">Preview</a>
+                            <a href="#">Git Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="portofolio-project">
+                        <img
+                            src="./images/project-3.jpg"
+                            alt="image of the third portofolio project"
+                        />
+                        <h3>Third portofolio project title</h3>
+                        <p>
+                            Short description of the project. Maximum two
+                            scentenses.
+                        </p>
+                        <div class="technology-container">
+                            <em>HTML</em>
+                            <em>CSS</em>
+                            <em>JavaScript</em>
+                            <em>React</em>
+                        </div>
+                        <div class="navigation-buttons">
+                            <a href="#">Preview</a>
+                            <a href="#">Git Repo</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- END: .portofolio-container -->
+            </section>
+
+            <section>
+                <article class="contact-form">
+                    <h2>Contact me</h2>
+                    <form action="" method="GET">
+                        <label>
+                            Name
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                placeholder="Enter your name"
+                            />
+                        </label>
+
+                        <label>
+                            Email
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                                placeholder="Enter your email address"
+                            />
+                        </label>
+
+                        <label>
+                            Phone number
+                            <input
+                                type="tel"
+                                name="tel"
+                                placeholder="Ex. +40 748-972.936"
+                                pattern="(^\+[0-9]{2}\s)([0-9]{3})-([0-9]{3})\.([0-9]{3})$"
+                            />
+                        </label>
+
+                        <label>
+                            Message
+                            <textarea
+                                name="message"
+                                required
+                                placeholder="Hi Zoltan, I would like to send you this message..."
+                            ></textarea>
+                        </label>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </article>
+                <!-- END: .contact-form -->
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2023 Magyari Zoltán</p>
+
+            <div class="professional-site-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+
+            <a href="#navigation-menu">
+                <img
+                    src="./icons/arrow-up.svg"
+                    alt="up arrow navigates us to the navigation menu"
+                />
+            </a>
+        </footer>
     </body>
 </html>

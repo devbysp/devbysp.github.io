@@ -1,21 +1,15 @@
-/* UNDER CONSTRUCTION MESSAGE */
-.under-construction-banner {
-    background-color: #f5d5d5;
+.technology-icons img {
+    width: 32px;
 }
 
-.under-construction-banner > p {
-    margin: 0px;
-    padding: 20px 0px;
-
-    font-size: 32px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-
-    color: #444f77;
+.profile-picture {
+    width: 150px;
 }
 
-/* CONTENT */
-body {
-    margin: 0px;
+.portofolio-project img {
+    width: 250px;
+}
+
+a[href='#navigation-menu'] > img {
+    width: 32px;
 }
