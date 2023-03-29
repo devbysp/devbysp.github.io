@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="#home-section">Home</a></li>
                     <li><a href="#portofolio-section">Portofolio</a></li>
-                    <li><a href="#contact-me-section">Contact</a></li>
+                    <li><a href="#contact-me-article">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -139,57 +139,51 @@
                 <!-- END: .portofolio-container -->
             </section>
 
-            <section id="contact-me-section">
-                <article class="contact-form">
-                    <h2>Contact me</h2>
-                    <form
-                        action="https://formspree.io/f/xoqzkvpz"
-                        method="POST"
-                    >
-                        <label>
-                            Name
-                            <input
-                                type="text"
-                                name="name"
-                                required
-                                placeholder="Enter your name"
-                            />
-                        </label>
+            <article id="contact-me-article">
+                <h2>Contact me</h2>
+                <form action="https://formspree.io/f/xoqzkvpz" method="POST">
+                    <label>
+                        Name
+                        <input
+                            type="text"
+                            name="name"
+                            required
+                            placeholder="Enter your name"
+                        />
+                    </label>
 
-                        <label>
-                            Email
-                            <input
-                                type="email"
-                                name="email"
-                                required
-                                placeholder="Enter your email address"
-                            />
-                        </label>
+                    <label>
+                        Email
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            placeholder="Enter your email address"
+                        />
+                    </label>
 
-                        <label>
-                            Phone number
-                            <input
-                                type="tel"
-                                name="tel"
-                                placeholder="Ex. +40 748-972.936"
-                                pattern="(^\+[0-9]{2}\s)([0-9]{3})-([0-9]{3})\.([0-9]{3})$"
-                            />
-                        </label>
+                    <label>
+                        Phone number
+                        <input
+                            type="tel"
+                            name="tel"
+                            placeholder="Ex. +40 748-972.936"
+                            pattern="(^\+[0-9]{2}\s)([0-9]{3})-([0-9]{3})\.([0-9]{3})$"
+                        />
+                    </label>
 
-                        <label>
-                            Message
-                            <textarea
-                                name="message"
-                                required
-                                placeholder="Hi Zoltan, I would like to send you this message..."
-                            ></textarea>
-                        </label>
+                    <label>
+                        Message
+                        <textarea
+                            name="message"
+                            required
+                            placeholder="Hi Zoltan, I would like to send you this message..."
+                        ></textarea>
+                    </label>
 
-                        <button type="submit">Send</button>
-                    </form>
-                </article>
-                <!-- END: .contact-form -->
-            </section>
+                    <button type="submit">Send</button>
+                </form>
+            </article>
         </main>
 
         <footer>
@@ -201,7 +195,7 @@
                     GitHub
                 </a>
                 <a href="#">
-                    <img src="./icons/linkedin-plain.svg" />
+                    <img src="./icons/linkedin-plain.svg" alt="linkedin icon" />
                     LinkedIn
                 </a>
             </div>
