@@ -6,127 +6,195 @@
             name="viewport"
             content="width=display-width, initial-scaling=1.0" />
 
-        <title>Magyari Zoltán</title>
+        <title>Zoltán Magyari</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="./icons/favicon.ico" />
     </head>
 
     <body>
+        <!------------------------------- HEADER ------------------------------>
         <header>
-            <nav id="navigation-menu">
+            <article class="signature">
                 <!-- Instead of icon I'll use text -->
                 <!-- Font family: Mogra 400 120px -->
                 <span class="logo">MZ</span>
+                <h1>Zoltán Magyari</h1>
+            </article>
 
+            <nav id="navigation-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href=".">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <!---------------------------- Home ------------------------------->
             <section id="home">
-                <h1>Magyari Zoltán</h1>
-                <h2>
-                    Web
-                    <strong>Developer</strong>
-                </h2>
-                <p>
-                    Hi! I'm a <em>web developer</em> creating
-                    <em>responsive</em> websites. I value simple
-                    <em>content structure</em>, <em>clean design</em>, and
-                    <em>thoughtful interactions</em>, that achieves your
-                    business goals.
-                </p>
-                <div class="technology-icons">
-                    <img src="./icons/html5-original.svg" alt="html icon" />
-                    <img src="./icons/css3-original.svg" alt="css icon" />
-                    <img
-                        src="./icons/javascript-original.svg"
-                        alt="javascript icon" />
-                    <img
-                        src="./icons/typescript-original.svg"
-                        alt="typescript icon" />
-                    <img
-                        src="./icons/react-original-wordmark.svg"
-                        alt="react icon" />
+                <img
+                    src="./images/profile-bg.jpg"
+                    alt="profile picture as a backgroung"
+                    class="bg-profile-picture" />
+                <div class="introduction">
+                    <article class="title">
+                        <h2>Hi, I'm Zoltán Magyari</h2>
+                        <p>
+                            Hi! I'm a <em>web developer</em> creating
+                            <em>responsive</em> websites. I value simple
+                            <em>content structure</em>, <em>clean design</em>,
+                            and <em>thoughtful interactions</em>, that achieves
+                            your business goals.
+                        </p>
+                    </article>
+                    <a href="#portfolio">Portfolio</a>
                 </div>
+            </section>
+
+            <!------------------------- About me ------------------------------>
+            <section id="about">
                 <img
                     src="./images/profile.jpg"
                     alt="profile picture"
                     class="profile-picture" />
+
+                <div class="title">
+                    <h2>About Me</h2>
+                    <p>
+                        Here you will find more information about me, about my
+                        background, what I do and my current skills mostly in
+                        terms of programming and technology
+                    </p>
+                </div>
+
+                <div class="about-me-info">
+                    <article class="my-history">
+                        <h3>My short history</h3>
+
+                        <p>
+                            I'm a web developer based in Romania, Targu Mures.
+                        </p>
+                        <p>
+                            I started my career in 2006, working for big
+                            corporations. I have experience working in
+                            multinational environments, and also working in
+                            team. I gained alot of expertise in web technology
+                            domain.
+                        </p>
+                        <p>
+                            Currently working as a freelancer, I enjoy
+                            developing web applications with simple structure,
+                            clean design and good architecture.
+                        </p>
+                    </article>
+
+                    <article class="my-skills">
+                        <h3>My skills</h3>
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>Java</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                    </article>
+                </div>
+
+                <a href="#contact">Contact</a>
             </section>
 
+            <!-------------------------- Portfolio ---------------------------->
             <section id="portfolio">
-                <h2>My Recent Work</h2>
+                <div class="title">
+                    <h2>Portfolio</h2>
+                    <p>
+                        Here you will find the personal and some of my client
+                        proojects
+                    </p>
+                </div>
+
                 <div class="portfolio-container">
                     <article class="portfolio-project">
                         <img
                             src="./images/project-1.jpg"
                             alt="image of the first portfolio project" />
-                        <h3>First portfolio project title</h3>
-                        <p>
-                            Short description of the project. Maximum two
-                            scentenses.
-                        </p>
-                        <div class="technology-container">
-                            <em>HTML</em>
-                            <em>CSS</em>
-                        </div>
-                        <div class="navigation-buttons">
-                            <a href="#">Preview</a>
-                            <a href="#">Git Repo</a>
-                        </div>
+
+                        <section class="project-info">
+                            <h3>First project</h3>
+                            <p>
+                                Adipisicing adipisicing molestiae omnis
+                                perferendis dignissimos, tenetur doloremque Eius
+                                laborum et sequi modi laborum? Harum quo modi
+                                ducimus quos aut
+                            </p>
+
+                            <div class="navigation-buttons">
+                                <a href="#">Preview</a>
+                                <a href="#">Git Repo</a>
+                            </div>
+                        </section>
                     </article>
 
                     <article class="portfolio-project">
                         <img
                             src="./images/project-2.jpg"
-                            alt="image of the second portfolio project" />
-                        <h3>Second portfolio project title</h3>
-                        <p>
-                            Short description of the project. Maximum two
-                            scentenses.
-                        </p>
-                        <div class="technology-container">
-                            <em>HTML</em>
-                            <em>CSS</em>
-                            <em>JavaScript</em>
-                        </div>
-                        <div class="navigation-buttons">
-                            <a href="#">Preview</a>
-                            <a href="#">Git Repo</a>
-                        </div>
+                            alt="image of the first portfolio project" />
+
+                        <section class="project-info">
+                            <h3>Second project</h3>
+                            <p>
+                                Elit nihil autem fugit distinctio repellat ipsum
+                                Asperiores voluptate nihil numquam reprehenderit
+                                illo accusamus! Ducimus debitis dicta hic
+                                quibusdam expedita.
+                            </p>
+
+                            <div class="navigation-buttons">
+                                <a href="#">Preview</a>
+                                <a href="#">Git Repo</a>
+                            </div>
+                        </section>
                     </article>
 
                     <article class="portfolio-project">
                         <img
                             src="./images/project-3.jpg"
-                            alt="image of the third portfolio project" />
-                        <h3>Third portfolio project title</h3>
-                        <p>
-                            Short description of the project. Maximum two
-                            scentenses.
-                        </p>
-                        <div class="technology-container">
-                            <em>HTML</em>
-                            <em>CSS</em>
-                            <em>JavaScript</em>
-                            <em>React</em>
-                        </div>
-                        <div class="navigation-buttons">
-                            <a href="#">Preview</a>
-                            <a href="#">Git Repo</a>
-                        </div>
+                            alt="image of the first portfolio project" />
+
+                        <section class="project-info">
+                            <h3>Third project</h3>
+                            <p>
+                                Consectetur nesciunt vero commodi necessitatibus
+                                minus ut ad Eius explicabo inventore eos atque
+                                quia! Tempora dignissimos sed repudiandae fugit
+                                ex.
+                            </p>
+
+                            <div class="navigation-buttons">
+                                <a href="#">Preview</a>
+                                <a href="#">Git Repo</a>
+                            </div>
+                        </section>
                     </article>
                 </div>
                 <!-- END: .portfolio-container -->
             </section>
 
-            <article id="contact-me">
-                <h2>Contact me</h2>
+            <!-------------------------- Contact ------------------------------>
+            <article id="contact">
+                <div class="title">
+                    <h2>Contact me</h2>
+                    <p>
+                        Feel free to contact me by submitting the form below and
+                        I will get back to you as soon as possible.
+                    </p>
+                </div>
+
                 <form action="https://formspree.io/f/xoqzkvpz" method="POST">
                     <label>
                         Name
@@ -168,6 +236,7 @@
             </article>
         </main>
 
+        <!---------------------------- FOOTER --------------------------------->
         <footer>
             <p>Copyright &copy; 2023 Magyari Zoltán</p>
 
@@ -186,7 +255,7 @@
                 <img
                     src="./icons/arrow-up.svg"
                     alt="up arrow navigates us to the navigation menu" />
-                <a href="#home">Home</a>
+                <a href=".">Home</a>
             </a>
         </footer>
     </body>

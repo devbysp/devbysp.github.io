@@ -1,12 +1,12 @@
-.technology-icons img {
-    width: 32px;
+.bg-profile-picture {
+    width: 100vw;
 }
 
 .profile-picture {
-    width: 150px;
+    width: 250px;
 }
 
-.portofolio-project img {
+.portfolio-project img {
     width: 250px;
 }
 
