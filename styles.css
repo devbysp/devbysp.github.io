@@ -55,6 +55,12 @@
     }
 }
 
+@media (pointer: fine) and (pointer: fine) {
+    #home .rounded-profile-picture {
+        width: 33%;
+    }
+}
+
 /*----------------------------------- ABOUT ----------------------------------*/
 #about .rounded-profile-picture {
     display: none;
