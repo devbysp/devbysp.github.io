@@ -28,30 +28,30 @@
     </head>
 
     <body>
-        <!------------------------------- HEADER ------------------------------>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <header>
             <nav class="navbar">
                 <article class="signature">
                     <span class="logo">SP</span>
-                    <h1 class="developer">Zoltán Magyari</h1>
+                    <h2 class="developer">Zoltán Magyari</h2>
                 </article>
 
-                <button class="menu-toggler">
+                <button class="menu-toggler menu-toggler-js">
                     <i class="menu-icon material-symbols-outlined">menu</i>
                 </button>
 
                 <!-- TODO: To show the menu on mobile devices, the `show` class has to be added -->
-                <ul class="navmenu">
-                    <li class="navitem">
-                        <a href="." class="navlink">Home</a>
+                <ul class="navmenu navmenu-js">
+                    <li class="navitem navitem-js">
+                        <a href="#" class="navlink">Home</a>
                     </li>
-                    <li class="navitem">
+                    <li class="navitem navitem-js">
                         <a href="#about" class="navlink">About</a>
                     </li>
-                    <li class="navitem">
+                    <li class="navitem navitem-js">
                         <a href="#portfolio" class="navlink">Portfolio</a>
                     </li>
-                    <li class="navitem">
+                    <li class="navitem navitem-js">
                         <a href="#contact" class="navlink">Contact</a>
                     </li>
                 </ul>
@@ -59,8 +59,8 @@
         </header>
 
         <main>
-            <!---------------------------- Home ------------------------------->
-            <section id="home" class="page">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div id="home" class="page">
                 <img
                     src="./images/profile.jpg"
                     alt="round profile picture"
@@ -83,10 +83,10 @@
                         >Portfolio</a
                     >
                 </div>
-            </section>
+            </div>
 
-            <!------------------------- About me ------------------------------>
-            <section id="about" class="page">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~ About me ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div id="about" class="page">
                 <img
                     src="./images/profile.jpg"
                     alt="round profile picture"
@@ -144,10 +144,10 @@
                 <div class="navigation-buttons">
                     <a href="#contact" class="button button-primary">Contact</a>
                 </div>
-            </section>
+            </div>
 
-            <!-------------------------- Portfolio ---------------------------->
-            <section id="portfolio" class="page">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div id="portfolio" class="page">
                 <div class="title">
                     <h2>Portfolio</h2>
                     <p>
@@ -157,13 +157,13 @@
                 </div>
 
                 <div class="portfolio-project-container">
-                    <article class="portfolio-project responsive-wrap">
+                    <div class="portfolio-project responsive-wrap">
                         <img
                             src="./images/project-1.jpg"
-                            alt="image of the first portfolio project"
+                            alt="The first portfolio project"
                             class="shadow" />
 
-                        <section class="project-information">
+                        <article class="project-information">
                             <h3>First project</h3>
                             <p>
                                 Adipisicing adipisicing molestiae omnis
@@ -178,16 +178,16 @@
                                 >
                                 <a class="button" href="#">Git Repo</a>
                             </div>
-                        </section>
-                    </article>
+                        </article>
+                    </div>
 
-                    <article class="portfolio-project responsive-wrap">
+                    <div class="portfolio-project responsive-wrap">
                         <img
                             src="./images/project-2.jpg"
-                            alt="image of the first portfolio project"
+                            alt="The scond portfolio project"
                             class="shadow" />
 
-                        <section class="project-information">
+                        <article class="project-information">
                             <h3>Second project</h3>
                             <p>
                                 Elit nihil autem fugit distinctio repellat ipsum
@@ -202,16 +202,16 @@
                                 >
                                 <a class="button" href="#">Git Repo</a>
                             </div>
-                        </section>
-                    </article>
+                        </article>
+                    </div>
 
-                    <article class="portfolio-project responsive-wrap">
+                    <div class="portfolio-project responsive-wrap">
                         <img
                             src="./images/project-3.jpg"
-                            alt="image of the first portfolio project"
+                            alt="The third portfolio project"
                             class="shadow" />
 
-                        <section class="project-information">
+                        <article class="project-information">
                             <h3>Third project</h3>
                             <p>
                                 Consectetur nesciunt vero commodi necessitatibus
@@ -226,12 +226,12 @@
                                 >
                                 <a class="button" href="#">Git Repo</a>
                             </div>
-                        </section>
-                    </article>
+                        </article>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-            <!-------------------------- Contact ------------------------------>
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
             <article id="contact" class="page">
                 <div class="title">
                     <h2>Contact me</h2>
@@ -297,14 +297,14 @@
             </article>
         </main>
 
-        <!---------------------------- FOOTER --------------------------------->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <footer class="footer">
             <div class="responsive-wrap">
                 <p><strong>Copyright</strong> &copy; 2023 Zoltán Magyari</p>
                 <a href="mailto:devbysp@proton.me"
-                    ><strong>Email</strong>: devbysp@proton.me</a
+                    ><strong>Email:</strong> devbysp@proton.me</a
                 >
-                <p><strong>Mobile</strong>: +40 746 964 062</p>
+                <p><strong>Mobile:</strong> +40 746 964 062</p>
             </div>
 
             <div class="professional-site-links">
@@ -312,7 +312,10 @@
                 <a href="#" class="navicon linked-in"></a>
             </div>
 
-            <a href="." class="navicon page-top"></a>
+            <a href="#" class="navicon page-top"></a>
         </footer>
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <script type="module" src="index.js"></script>
     </body>
 </html>
