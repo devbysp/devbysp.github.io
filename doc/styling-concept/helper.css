@@ -112,3 +112,8 @@ th {
 .color-patch:nth-of-type(10) {
     background-color: var(--gray-9);
 }
+
+.dialog,
+.headless-dialog {
+    margin: 20px;
+}
