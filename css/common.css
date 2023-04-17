@@ -96,6 +96,7 @@
     width: 100%;
     color: var(--gray-9);
     text-decoration: none;
+    letter-spacing: -2px;
 }
 
 .navitem:hover {
