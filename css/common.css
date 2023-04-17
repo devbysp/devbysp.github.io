@@ -298,12 +298,18 @@ label .input {
     grid-row-gap: 1rem;
     padding: 1rem 1rem 2rem;
     margin: 0.5rem;
-    min-width: 350px;
+    min-width: 90%;
     background-color: var(--accent-color);
     opacity: 0.95;
     border-radius: 10px;
     box-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.35),
         0px 6px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    .dialog {
+        min-width: 350px;
+    }
 }
 
 .headless-dialog {
