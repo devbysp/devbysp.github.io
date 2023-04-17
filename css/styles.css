@@ -219,5 +219,9 @@ a {
     bottom: 3rem;
     right: 1rem;
 
+    background-color: var(--gray-2);
     background-image: url('../icons/arrow-up.svg');
+
+    border: 1px solid var(--gray-2);
+    border-radius: 50%;
 }
