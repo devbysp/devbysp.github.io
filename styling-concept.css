@@ -1,39 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mogra&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-/*---------------------------------- Signature -------------------------------*/
-.signature {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: fit-content;
+:root {
+    --gray-0: #f2f2f2;
+    --gray-1: #e6e6e6;
+    --gray-2: gainsboro;
+    --gray-3: lightgray;
+    --gray-4: silver;
+    --gray-5: darkgray;
+    --gray-6: gray;
+    --gray-7: dimgray;
+    --gray-8: #3d3a38;
+    --gray-9: #040404;
 }
 
-.logo {
-    padding: 1rem 1rem 0.5rem;
-    width: fit-content;
-    color: var(--gray-0);
-    background-color: var(--signature-color);
-    font-family: Mogra, cursive, sans-serif;
-    font-size: 3rem;
-    border-radius: 0.5rem;
-}
+/*---------------------------------- BASE STYLE ------------------------------*/
 
-.developer {
+* {
     margin: 0;
-    padding-left: 1rem;
-    color: var(--gray-9);
+    padding: 0;
+}
+
+html {
+    --section-spacer: 7rem;
+    --page-side-margin: 0rem;
+
+    box-sizing: border-box;
+
     font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    html {
+        font-size: 10px;
+    }
+}
+
+h1 {
+    margin-top: 4rem;
     font-size: 4rem;
     font-weight: 900;
-    text-transform: uppercase;
 }
+
+h2 {
+    margin-top: 5.6rem;
+    font-size: 5.6rem;
+    font-family: Roboto Slab, sans-serif;
+}
+
+h3 {
+    margin-top: 3.5rem;
+    font-size: 3.5rem;
+    font-family: Roboto Slab, sans-serif;
+}
+
+h4 {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+/*----------------------------- COMMON COMPONENTS ----------------------------*/
 
 /*-------------------------------- Toggler menu ------------------------------*/
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48;
-}
-
 .menu-icon {
     display: inline-block;
     position: relative;
@@ -50,24 +88,9 @@
     }
 }
 
-/*------------------------------ Navigation bar ------------------------------*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    padding: 1rem 2rem;
-
-    background-color: var(--gray-0);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-}
-
 /*------------------------------ Navigation menu -----------------------------*/
 .navmenu {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -76,69 +99,48 @@
     list-style-type: none;
 }
 
-.navmenu:not(.show) {
-    display: none;
-}
-
 .navitem {
-    padding: 1.6rem 1rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
     font-size: 3.2rem;
-}
-
-.navlink {
-    display: block;
-    width: 100%;
-    color: var(--gray-9);
-    text-decoration: none;
 }
 
 .navitem:hover {
     transform: translateX(-1px) translateY(-1px);
-    border-radius: 5px;
-    background-color: var(--signature-color-light);
-}
-
-.navitem:hover .navlink {
-    color: var(--gray-2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: var(--gray-1);
 }
 
 @media (min-width: 1300px) and (pointer: fine) {
     .navmenu {
-        diplay: flex;
         flex-direction: row;
         gap: 4rem;
         width: fit-content;
         padding-left: 0;
     }
-
-    .navmenu:not(.show) {
-        display: flex;
-    }
 }
 
-/*------------------------------ Navigation icon -----------------------------*/
-.navicon {
-    height: 4rem;
-    width: 4rem;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-/*----------------------------- Navigation butttons --------------------------*/
-.navigation-buttons {
+/*------------------------------ Navigation bar ------------------------------*/
+.navbar {
     display: flex;
-    gap: 4rem;
-    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    position: sticky;
+    top: 0;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: var(--gray-0);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*----------------------------- Profile pictures -----------------------------*/
 .rounded-profile-picture {
     display: block;
-    margin: 0em auto;
-    width: 70vw;
+    margin: 4em auto;
+    width: 35%;
     border-radius: 50%;
 }
 
@@ -181,7 +183,7 @@ label .input {
 
 .form {
     margin-top: 5.6rem;
-    padding: 3rem 2rem;
+    padding: 5.6rem 2rem;
 
     background-color: var(--gray-0);
     border: 1px solid var(--gray-3);
@@ -217,7 +219,7 @@ label .input {
 
 .button-primary {
     color: var(--gray-1);
-    background-color: var(--signature-color);
+    background-color: var(--gray-9);
 }
 
 .button:hover {
@@ -242,45 +244,19 @@ label .input {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     background-color: var(--gray-3);
     border-radius: 6px;
-}
-
-/*---------------------------------- Paper -----------------------------------*/
-.shadow {
-    box-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.35),
-        0px 6px 32px 0 rgba(0, 0, 0, 0.25);
-}
-
-.light-shadow {
     box-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.1),
         0px 6px 32px 0 rgba(0, 0, 0, 0.05);
 }
 
-/*----------------------------------- Page -----------------------------------*/
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: var(--section-spacer) var(--page-side-margin);
-    min-height: 100vh;
-}
-
-.page:nth-of-type(2n) {
-    background-color: var(--gray-0);
-}
-
-@media (min-width: 1300px) and (pointer: fine) {
-    .page {
-        --page-side-margin: 0;
-    }
-}
-
 /*----------------------- Special Multi-Column Solution ----------------------*/
 .responsive-wrap {
+    /* The switch between column / row layout is done by setting the items 
+       width to 100% or less. */
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
 
@@ -292,10 +268,7 @@ label .input {
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
     padding: 1rem 1rem 2rem;
-    margin: 0.5rem;
-    min-width: 350px;
-    background-color: var(--accent-color);
-    opacity: 0.95;
+    background-color: var(--gray-0);
     border-radius: 10px;
     box-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.35),
         0px 6px 32px 0 rgba(0, 0, 0, 0.25);
@@ -305,7 +278,12 @@ label .input {
     display: grid;
     grid-template-columns: auto min-content;
     grid-template-rows: min-content;
-    width: 40%;
+    grid-column-gap: 2rem;
+    padding: 1rem 1rem 2rem;
+    background-color: var(--gray-0);
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.35),
+        0px 6px 32px 0 rgba(0, 0, 0, 0.25);
 }
 
 .dialog-title {
@@ -342,7 +320,6 @@ label .input {
 }
 
 .dialog-content {
-    color: var(--gray-4);
     grid-column: 1 / span 2;
 }
 
@@ -354,42 +331,96 @@ label .input {
     margin: 0;
 }
 
-/*---------------------------------- Toaster ---------------------------------*/
-.toaster {
-    flex-direction: column;
+/*--------------------------------- COMPONENTS -------------------------------*/
+
+/*---------------------------------- Signature -------------------------------*/
+.signature {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0 auto 2rem;
+    width: fit-content;
+}
+
+.logo {
+    padding: 1rem 1rem 0.5rem;
+    width: fit-content;
+    color: var(--gray-0);
+    background-color: var(--gray-9);
+    font-family: Mogra, cursive, sans-serif;
+    font-size: 3rem;
+    border-radius: 0.5rem;
+}
+
+.developer {
+    margin: 0;
+    padding-left: 1rem;
+    text-transform: uppercase;
+}
+
+/*----------------------------------- Title ----------------------------------*/
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    .title {
+        width: 50%;
+    }
+}
+
+/*----------------------------------- About Me -------------------------------*/
+.history {
     width: 100%;
-    position: sticky;
-    bottom: 2rem;
 }
 
-.toaster:not(.show) {
-    animation: fadeout 0.6s 2.5s;
+.skills {
+    width: 100%;
 }
 
-.toaster.show {
-    animation: fadein 0.6s;
-}
-
-@keyframes fadein {
-    from {
-        bottom: 0;
-        opacity: 0;
+@media (min-width: 1300px) and (pointer: fine) {
+    .history {
+        width: 50%;
     }
-    to {
-        bottom: 30;
-        opacity: 95%;
+
+    .skills {
+        width: 40%;
     }
 }
 
-@keyframes fadeout {
-    from {
-        bottom: 30;
-        opacity: 95%;
+/*----------------------------- Portfolio Project ----------------------------*/
+.portfolio-project {
+    align-items: center;
+}
+
+.portfolio-project img {
+    width: 100%;
+}
+
+.portfolio-project .navigation-buttons {
+    display: flex;
+    gap: 4rem;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    .portfolio-project img {
+        width: 40%;
     }
-    to {
-        bottom: 0;
-        opacity: 0;
+
+    .project-information {
+        width: 50%;
     }
+}
+
+/*----------------------------------- Page -----------------------------------*/
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--section-spacer) var(--page-side-margin);
 }

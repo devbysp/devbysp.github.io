@@ -163,6 +163,15 @@ textarea.input {
     }
 }
 
+.toaster {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 2rem;
+    width: 100%;
+    position: sticky;
+    bottom: 2rem;
+}
+
 /*---------------------------------- FOOTER ----------------------------------*/
 .footer {
     display: flex;

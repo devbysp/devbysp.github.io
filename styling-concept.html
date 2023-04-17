@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Components</title>
+        <link rel="stylesheet" href="helper.css" />
+        <link rel="stylesheet" href="styling-concept.css" />
+    </head>
+
+    <body>
+        <article>
+            <h2>Typography</h2>
+            <div class="sc-visualize-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Text type</th>
+                            <th rowspan="2">Font family</th>
+                            <th colspan="2">Font size</th>
+                            <th rowspan="2">Font weight</th>
+                        </tr>
+                        <tr>
+                            <th>window width &lt; 1300 and Mobile</th>
+                            <th>window width&ge; 1300</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><h1>H1 Typography</h1></td>
+                            <td>Roboto</td>
+                            <td>72px</td>
+                            <td>40px</td>
+                            <td>900</td>
+                        </tr>
+                        <tr>
+                            <td><h2>H2 Typography</h2></td>
+                            <td>Roboto Slab</td>
+                            <td>100px</td>
+                            <td>56px</td>
+                            <td>700</td>
+                        </tr>
+                        <tr>
+                            <td><h3>H3 Typography</h3></td>
+                            <td>Roboto Slab</td>
+                            <td>63px</td>
+                            <td>35px</td>
+                            <td>700</td>
+                        </tr>
+                        <tr>
+                            <td><div class="navitem">Menu item</div></td>
+                            <td>Roboto</td>
+                            <td>57.6px</td>
+                            <td>3.2px</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td><p>Normal tex</p></td>
+                            <td>Roboto</td>
+                            <td>36px</td>
+                            <td>20px</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td><p>Button</p></td>
+                            <td>Roboto</td>
+                            <td>36px</td>
+                            <td>20px</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td><p class="chip">Chip</p></td>
+                            <td>monospace</td>
+                            <td>36px</td>
+                            <td>20px</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td><p class="logo">Logo</p></td>
+                            <td>Mogra</td>
+                            <td>54px</td>
+                            <td>30px</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <article>
+            <h2>Color palette</h2>
+            <div class="color-palette">
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+                <div class="color-patch"></div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Form & components</h2>
+
+            <div class="sc-visualize-container">
+                <form action="#" method="POST" class="form">
+                    <label class="sc-visualize-container">
+                        Name
+                        <input
+                            type="text"
+                            placeholder="Please enter your name here ..."
+                            class="input sc-visualize-element" />
+                    </label>
+
+                    <label class="sc-visualize-container">
+                        Email
+                        <input
+                            type="email"
+                            placeholder="somebody@yaoo.com"
+                            class="input sc-visualize-element" />
+                    </label>
+
+                    <label class="sc-visualize-container">
+                        Mobile
+                        <input
+                            type="tel"
+                            placeholder="+40 748 972 9364"
+                            class="input sc-visualize-element" />
+                    </label>
+
+                    <label class="sc-visualize-container">
+                        Message
+                        <textarea
+                            name="message"
+                            required
+                            placeholder="Hi Zoltan, I would like to send you this message..."
+                            class="input sc-visualize-element"></textarea>
+                    </label>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="button">Send</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+
+        <article>
+            <h2>Signature</h2>
+            <div class="signature sc-visualize-container">
+                <span class="logo sc-visualize-element">SP</span>
+                <h1 class="developer sc-visualize-element">Zoltán Magyari</h1>
+            </div>
+        </article>
+
+        <article>
+            <h2>Menu toggler button</h2>
+            <button class="menu-toggler">
+                <i class="menu-icon material-symbols-outlined">menu</i>
+            </button>
+            <p>Resize the browser window, to activate the menu icon.</p>
+        </article>
+
+        <article>
+            <h2>Navigation menu</h2>
+            <ul class="navmenu sc-visualize-container">
+                <li class="navitem sc-visualize-element">Home</li>
+                <li class="navitem sc-visualize-element">About</li>
+                <li class="navitem sc-visualize-element">Portfolio</li>
+                <li class="navitem sc-visualize-element">Contact</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Navigation bar</h2>
+            <div class="sc-visualize-page">
+                <nav class="navbar">
+                    <div class="signature sc-visualize-container">
+                        <span class="logo sc-visualize-element">SP</span>
+                        <h1 class="developer sc-visualize-element">
+                            Zoltán Magyari
+                        </h1>
+                    </div>
+                    <button class="menu-toggler">
+                        <i class="menu-icon material-symbols-outlined">menu</i>
+                    </button>
+                    <ul class="navmenu sc-visualize-container">
+                        <li class="navitem sc-visualize-element">Home</li>
+                        <li class="navitem sc-visualize-element">About</li>
+                        <li class="navitem sc-visualize-element">Portfolio</li>
+                        <li class="navitem sc-visualize-element">Contact</li>
+                    </ul>
+                </nav>
+                <p>
+                    Elit mollitia temporibus nam assumenda illo Velit impedit
+                    laboriosam harum beatae nam esse veritatis Iste dignissimos
+                    placeat rem architecto obcaecati Obcaecati voluptatibus
+                    iusto deleniti quis nam Itaque adipisci similique atque ea
+                    quas totam ut Esse totam molestiae quis quidem praesentium!
+                    Fugit officia saepe harum fuga cupiditate porro! Ullam
+                    aperiam alias tempora repellat consequuntur reiciendis!
+                    Ducimus maxime sed minima minima alias Nam soluta provident
+                    quam ab sunt soluta Dolorum quasi nesciunt qui incidunt
+                    quasi mollitia Amet a in veniam accusamus necessitatibus.
+                    Eius excepturi aliquam nostrum consequuntur dolor Veniam
+                    voluptatibus minima inventore blanditiis aperiam? Quas
+                    veniam vel reprehenderit ipsam cumque Nobis at.
+                </p>
+                <p>
+                    Tenetur reiciendis quam pariatur praesentium doloribus
+                    consequatur Nemo minima exercitationem neque debitis iusto
+                    alias commodi, rem accusantium blanditiis. Repudiandae
+                    molestias dolorum velit sed ea? Ipsum autem officia autem
+                    delectus dolores Aliquid eaque natus laboriosam quas labore!
+                    Deleniti illum optio laborum debitis culpa unde. Dicta sit
+                    recusandae iure animi suscipit, vel. Aliquam quibusdam
+                    distinctio fugit explicabo quas sapiente Consectetur facilis
+                    inventore sapiente tempore mollitia Saepe fugiat facere illo
+                    dolor facilis. Omnis velit non unde corrupti dolore Repellat
+                    corrupti consequatur magni earum numquam, consequatur!
+                    Consequuntur esse non quis fugiat quasi aliquid? Ratione
+                    nemo libero nihil perferendis reprehenderit! Dolores
+                    accusamus quas omnis voluptatem dolores corporis. Esse
+                    laboriosam dolorum quod autem possimus Assumenda tempora
+                    architecto est incidunt ducimus? In optio enim beatae
+                    consequuntur a commodi. Sed doloremque id reiciendis dolor
+                    libero facilis Magni asperiores itaque totam molestias
+                    ducimus perferendis Dicta consequuntur totam pariatur
+                    necessitatibus molestias aliquid dolorum Numquam incidunt
+                    fugiat labore tempore rerum distinctio voluptate Facere
+                    placeat suscipit expedita repudiandae ipsam similique.
+                    Sapiente assumenda perspiciatis vel tempora praesentium Amet
+                    voluptatem expedita nulla officia sed modi Aspernatur magnam
+                    id voluptatibus quos nobis temporibus? Nam dolores natus
+                    corporis nobis quod Quae delectus dicta expedita perferendis
+                    distinctio?
+                </p>
+                <p>
+                    Voluptas impedit optio laboriosam nisi explicabo, vel,
+                    tempore assumenda eos, architecto saepe Quidem in facilis
+                    quia in aperiam. Eius accusantium incidunt rerum aliquam
+                    illum fuga debitis voluptatem! Incidunt optio quos quasi qui
+                    nihil. Maiores praesentium animi sunt dolore fuga
+                    Consequatur deserunt aliquid numquam officia optio, velit
+                    Dolore sunt officia officiis adipisci cupiditate Ipsum
+                    eligendi commodi sint laudantium animi? Nulla sapiente
+                    nesciunt voluptatibus omnis saepe porro Est sapiente eius
+                    similique aperiam repudiandae harum? Quos quod accusamus
+                    cumque iste quam inventore Consequuntur consequatur
+                    consectetur voluptates nemo voluptatum. Dolorem perspiciatis
+                    nam a praesentium culpa dolorum In illo repellendus quas
+                    temporibus magni. Eligendi praesentium est ipsum commodi qui
+                    Praesentium aut vitae recusandae aliquam aspernatur?
+                    Voluptas neque optio aliquam cum consequatur Doloribus enim
+                    illum quaerat dignissimos quas. Ducimus eveniet laboriosam
+                    hic provident veritatis!
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Rounded profile picture</h2>
+            <img
+                src="../../images/profile.jpg"
+                alt="rounded profile picture"
+                class="rounded-profile-picture" />
+        </article>
+
+        <article>
+            <h2>Title</h2>
+
+            <section class="title sc-visualize-container">
+                <h2 class="sc-visualize-element">Hi, I'm Zoltán Magyari</h2>
+                <p class="sc-visualize-element">
+                    Hi! I'm a <em>web developer</em> creating
+                    <em>responsive</em> websites. I value simple
+                    <em>content structure</em>, <em>clean design</em>, and
+                    <em>thoughtful interactions</em>, that achieves your
+                    business goals.
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Subtitle & paragraphs</h2>
+
+            <h3 class="sc-visualize-element">This is a subtitle</h3>
+            <p class="sc-visualize-element">
+                Adipisicing quod ab minus nemo sint facere, veritatis iure!
+                Facilis architecto consequuntur debitis excepturi similique sunt
+                alias. Exercitationem odit doloribus dignissimos quod nulla
+                Doloremque deleniti magni laborum explicabo qui? Asperiores
+                porro dicta quae adipisicing quo? Dolores et at eos
+                exercitationem harum Odit nihil ad nemo nobis veritatis totam.
+                Sapiente architecto.
+            </p>
+            <p class="sc-visualize-element">
+                Elit aliquam quos est quam atque Rerum ut quasi repellendus
+                obcaecati eligendi. Adipisci neque a itaque at minus. A tenetur
+                nam ullam similique consequuntur Magni autem dolorum nesciunt
+                rem consectetur Sapiente ad ipsum cum cum impedit. Nam eveniet
+                natus quasi distinctio sapiente libero accusantium beatae.
+                Laudantium sunt ad explicabo fugit quae Modi nisi amet
+                reprehenderit vero magni cum, est rerum. Maxime ut accusamus
+                aliquam molestiae?
+            </p>
+        </article>
+
+        <article>
+            <h2>Buttons</h2>
+            <div class="flex sc-visualize-container">
+                <a href="" class="button button-primary">Primary</a>
+                <a href="" class="button">Secondary</a>
+            </div>
+        </article>
+
+        <article>
+            <h2>Page layount</h2>
+            <section class="page">
+                <img
+                    src="../../images/profile.jpg"
+                    alt="rounded profile picture"
+                    class="rounded-profile-picture" />
+
+                <div class="title sc-visualize-element">
+                    <h2>About Me</h2>
+                    <p>
+                        Here you will find more information about me, about my
+                        background, what I do and my current skills mostly in
+                        terms of programming and technology
+                    </p>
+                </div>
+
+                <div class="responsive-wrap sc-visualize-container">
+                    <section class="history sc-visualize-element">
+                        <h3>My short history</h3>
+
+                        <p>
+                            I'm a web developer based in Romania, Targu Mures.
+                        </p>
+                        <p>
+                            I started my career in 2006, working for big
+                            corporations. I have experience working in
+                            multinational environments, and also working in
+                            team. I gained alot of expertise in web technology
+                            domain.
+                        </p>
+                        <p>
+                            Currently working as a freelancer, I enjoy
+                            developing web applications with simple structure,
+                            clean design and good architecture.
+                        </p>
+                    </section>
+
+                    <section class="skills sc-visualize-element">
+                        <h3>My skills</h3>
+
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">React</span>
+                        <span class="chip">Git</span>
+                        <span class="chip">Java</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Kubernetes</span>
+                    </section>
+                </div>
+
+                <a href="#contact" class="button">Contact</a>
+            </section>
+        </article>
+
+        <article>
+            <h2>Project</h2>
+
+            <section
+                class="portfolio-project responsive-wrap sc-visualize-container">
+                <img
+                    src="../../images/project-1.jpg"
+                    alt="image of the first portfolio project" />
+
+                <div class="project-information sc-visualize-container">
+                    <h3 class="sc-visualize-element">First project</h3>
+                    <p class="sc-visualize-element">
+                        Adipisicing adipisicing molestiae omnis perferendis
+                        dignissimos, tenetur doloremque Eius laborum et sequi
+                        modi laborum? Harum quo modi ducimus quos aut
+                    </p>
+
+                    <div class="navigation-buttons sc-visualize-container">
+                        <a href="#" class="button button-primary">Preview</a>
+                        <a href="#" class="button">Git Repo</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <h2>Cookie popup</h2>
+
+            <section class="sc-visualize-page">
+                <section class="dialog cookie-dialog sc-visualize-container">
+                    <h4 class="dialog-title sc-visualize-element">
+                        Dialog title
+                    </h4>
+
+                    <button class="dialog-close-button">&#xd7</button>
+
+                    <div class="dialog-content">
+                        <p class="dialog-message sc-visualize-element">
+                            Adipisicing adipisicing molestiae omnis perferendis
+                            dignissimos, tenetur doloremque Eius laborum et
+                            sequi modi laborum? Harum quo modi ducimus quos aut
+                        </p>
+                    </div>
+                </section>
+
+                <section class="headless-dialog cookie-dialog sc-visualize-container">
+                    <button class="dialog-close-button">&#xd7</button>
+
+                    <div class="dialog-content">
+                        <p class="dialog-message sc-visualize-element">
+                            Adipisicing adipisicing molestiae omnis perferendis
+                            dignissimos, tenetur doloremque Eius laborum et
+                            sequi modi laborum? Harum quo modi ducimus quos aut
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </article>
+    </body>
+</html>
