@@ -206,11 +206,11 @@ a {
 
 .navicon.github {
     margin-right: 1rem;
-    background-image: url('./icons/github-original.svg');
+    background-image: url('../icons/github-original.svg');
 }
 
 .navicon.linked-in {
-    background-image: url('./icons/linkedin-plain.svg');
+    background-image: url('../icons/linkedin-plain.svg');
 }
 
 .navicon.page-top {
@@ -218,5 +218,5 @@ a {
     bottom: 3rem;
     right: 1rem;
 
-    background-image: url('./icons/arrow-up.svg');
+    background-image: url('../icons/arrow-up.svg');
 }
