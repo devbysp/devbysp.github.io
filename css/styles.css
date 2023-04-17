@@ -20,6 +20,12 @@
     }
 }
 
+.use-of-cookies {
+    color: var(--signature-color-light);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
 /*----------------------------------- HOME -----------------------------------*/
 .introduction em {
     font-family: monospace;
