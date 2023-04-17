@@ -181,6 +181,7 @@ textarea.input {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 100%;
+    min-width: var(--min-page-width);
     height: 10rem;
 
     font-size: 1.8rem;
