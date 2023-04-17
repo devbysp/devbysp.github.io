@@ -1,6 +1,6 @@
 # Todo
 
--   [ ] A bemutatkozó szöveg többféle font-family használatára kitalálni egy megoldást.
+-   [x] A bemutatkozó szöveg többféle font-family használatára kitalálni egy megoldást.
 -   [ ] Telefonszám legyen opcionális az űrlapon.
 -   [ ] A kötelező mezők label-jére tenni egy csillagot.
 -   [ ] A message mezőnél meg kell akadályozni a vizszintes átméretezést.
