@@ -10,7 +10,5 @@ const togglerMenuUseCases = createTogglerMenuUseCases(navigationMenuPresenter);
 createTogglerMenuController(togglerMenuUseCases);
 
 const cookieMessagePresenter = createCookieMessagePresenter();
-const cookieMessageUseCases = createCookieMessageUseCases(
-    cookieMessagePresenter,
-);
+const cookieMessageUseCases = createCookieMessageUseCases(cookieMessagePresenter);
 createCookieMessageController(cookieMessageUseCases);
