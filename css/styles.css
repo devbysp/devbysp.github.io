@@ -72,10 +72,6 @@
     display: none;
 }
 
-#about .information {
-    margin-top: 8rem;
-}
-
 .information .button {
     margin-top: 5.6rem;
 }
@@ -84,11 +80,10 @@
     #about .rounded-profile-picture {
         display: block;
     }
-}
 
-@media (min-width: 1000px) and (pointer: fine) {
-    #about .responsive-content {
-        width: 45%;
+    .inline-block-container-2-columns {
+        --odd-column-width: 55%;
+        --even-column-width: 35%;
     }
 }
 

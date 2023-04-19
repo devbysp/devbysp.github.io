@@ -292,11 +292,38 @@ label .input {
 }
 
 /*------------------------------ Responsive Content --------------------------*/
-.responsive-content {
-    display: inline-block;
-    margin: 0 2.4%;
-    width: 95%;
-    vertical-align: top;
+.inline-block-container-2-columns {
+    --even-column-width: 45%;
+    --odd-column-width: 45%;
+    --inline-block-item-gap: 9%;
+    --inline-block-horizontal-padding: 4%;
+    --inline-block-margin-top: 8rem;
+
+    margin-top: var(--inline-block-margin-top);
+    padding-left: var(--inline-block-horizontal-padding);
+    padding-right: var(--inline-block-horizontal-padding);
+}
+
+.inline-block-item {
+    display: block;
+}
+
+@media (min-width: 1000px) and (pointer: fine) {
+    .inline-block-container-2-columns > .inline-block-item {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+    }
+
+    .inline-block-container-2-columns > .inline-block-item:nth-of-type(2n + 1) {
+        margin-right: calc(var(--inline-block-item-gap) / 2);
+        width: var(--odd-column-width);
+    }
+
+    .inline-block-container-2-columns > .inline-block-item:nth-of-type(2n) {
+        margin-left: calc(var(--inline-block-item-gap) / 2);
+        width: var(--even-column-width);
+    }
 }
 
 /*----------------------------------- Dialog ---------------------------------*/
