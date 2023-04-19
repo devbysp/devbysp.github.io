@@ -1,6 +1,5 @@
 .prettierrc
 .eslintrc.js
-.gitcredentials
 node_modules/*
 package.json
 package-lock.json
