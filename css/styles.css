@@ -73,37 +73,22 @@
 }
 
 #about .information {
+    margin-top: 8rem;
+}
+
+.information .button {
     margin-top: 5.6rem;
-}
-
-#about .navigation-buttons {
-    margin-top: 3.5rem;
-}
-
-.history .button {
-    display: none;
 }
 
 @media (min-width: 1300px) and (pointer: fine) {
     #about .rounded-profile-picture {
         display: block;
     }
+}
 
-    #about .navigation-buttons {
-        display: none;
-    }
-
-    .history {
-        width: 50%;
-    }
-
-    .history .button {
-        margin-top: 3.5rem;
-        display: block;
-    }
-
-    .skills {
-        width: 40%;
+@media (min-width: 1000px) and (pointer: fine) {
+    #about .responsive-content {
+        width: 45%;
     }
 }
 

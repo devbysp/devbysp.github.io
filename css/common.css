@@ -282,13 +282,21 @@ label .input {
     }
 }
 
-/*----------------------- Special Multi-Column Solution ----------------------*/
+/*---------------------------- Responsive Multicolumn ------------------------*/
 .responsive-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+/*------------------------------ Responsive Content --------------------------*/
+.responsive-content {
+    display: inline-block;
+    margin: 0 2.4%;
+    width: 95%;
+    vertical-align: top;
 }
 
 /*----------------------------------- Dialog ---------------------------------*/
