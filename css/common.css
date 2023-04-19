@@ -291,10 +291,8 @@ label .input {
     flex-wrap: wrap;
 }
 
-/*------------------------------ Responsive Content --------------------------*/
-.inline-block-container-2-columns {
-    --even-column-width: 45%;
-    --odd-column-width: 45%;
+/*--------------------- Responsive Content with inline block -----------------*/
+.inline-block-container {
     --inline-block-item-gap: 9%;
     --inline-block-horizontal-padding: 4%;
     --inline-block-margin-top: 8rem;
@@ -308,19 +306,24 @@ label .input {
     display: block;
 }
 
+.nr-columns-2 {
+    --even-column-width: 45%;
+    --odd-column-width: 45%;
+}
+
 @media (min-width: 1000px) and (pointer: fine) {
-    .inline-block-container-2-columns > .inline-block-item {
+    .inline-block-container.nr-columns-2 > .inline-block-item {
         display: inline-block;
         vertical-align: top;
-        width: 45%;
     }
 
-    .inline-block-container-2-columns > .inline-block-item:nth-of-type(2n + 1) {
+    .inline-block-container.nr-columns-2
+        > .inline-block-item:nth-of-type(2n + 1) {
         margin-right: calc(var(--inline-block-item-gap) / 2);
         width: var(--odd-column-width);
     }
 
-    .inline-block-container-2-columns > .inline-block-item:nth-of-type(2n) {
+    .inline-block-container.nr-columns-2 > .inline-block-item:nth-of-type(2n) {
         margin-left: calc(var(--inline-block-item-gap) / 2);
         width: var(--even-column-width);
     }

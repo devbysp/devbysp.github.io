@@ -81,7 +81,7 @@
         display: block;
     }
 
-    .inline-block-container-2-columns {
+    .nr-columns-2 {
         --odd-column-width: 55%;
         --even-column-width: 35%;
     }
