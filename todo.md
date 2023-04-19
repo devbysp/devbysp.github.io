@@ -18,3 +18,4 @@
 -   [ ] A fontok a fizika tárhelyről legyenek letőltve. (követés elleni védelem)
 -   [x] Sütis felugró ablak. (csak példa szempontjából; a leendő ügyfél lássa hogy képes vagyok ilyesmit is megcsinálni)
 -   [x] Nemhasznált ikonok eltávolítása
+-   [ ] A title-ben lévő paragrafus töréspontjainak újragondolása
