@@ -293,9 +293,8 @@ label .input {
 
 /*--------------------- Responsive Content with inline block -----------------*/
 .inline-block-container {
-    --inline-block-item-gap: 9%;
-    --inline-block-horizontal-padding: 4%;
     --inline-block-margin-top: 8rem;
+    --inline-block-horizontal-padding: 4%;
 
     margin-top: var(--inline-block-margin-top);
     padding-left: var(--inline-block-horizontal-padding);
@@ -309,6 +308,7 @@ label .input {
 .nr-columns-2 {
     --even-column-width: 45%;
     --odd-column-width: 45%;
+    --inline-block-item-gap: 9%;
 }
 
 @media (min-width: 1000px) and (pointer: fine) {
