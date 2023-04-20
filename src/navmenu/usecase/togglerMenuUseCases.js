@@ -1,19 +1,29 @@
-export function createTogglerMenuUseCases(navmenuPresenter) {
-    let isNavMenuVisible = false;
+function createTogglerMenuUseCases(navmenuPresenter, navmenuController) {
+    let isNavmenuVisible = false;
 
-    function toggle(navmenu) {
-        isNavMenuVisible = !isNavMenuVisible;
+    function onNavigate() {
+        // The navigation is solved in the HTML with id props and references to them.
+        // Here it only has to be removed the listeners from the menuitems.
+        navmenuController.removeEventListenerToEachNavitem(onNavigate);
+        navmenuPresenter.hide();
+        isNavmenuVisible = false;
+    }
 
-        if (isNavMenuVisible) {
-            navmenu.subscribeToEventListener();
+    function toggle() {
+        if (isNavmenuVisible) {
+            navmenuController.removeEventListenerToEachNavitem(onNavigate);
+            navmenuPresenter.hide();
+            isNavmenuVisible = false;
         } else {
-            navmenu.unsubscribeToEventListener();
+            navmenuController.addEventListenerToEachNavitem(onNavigate);
+            navmenuPresenter.show();
+            isNavmenuVisible = true;
         }
-
-        navmenuPresenter.toggleVisibility();
     }
 
     return {
         toggle,
     };
 }
+
+export default { createTogglerMenuUseCases };

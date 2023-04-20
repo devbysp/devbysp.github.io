@@ -1,11 +1,18 @@
-export function createNavigationMenuPresenter() {
+function createNavigationMenuPresenter() {
     const navmenu = document.querySelector('.navmenu-js');
 
-    function toggleVisibility() {
-        navmenu.classList.toggle('show');
+    function show() {
+        navmenu.classList.add('show');
+    }
+
+    function hide() {
+        navmenu.classList.remove('show');
     }
 
     return {
-        toggleVisibility,
+        show,
+        hide,
     };
 }
+
+export default { createNavigationMenuPresenter };

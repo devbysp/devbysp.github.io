@@ -1,11 +1,11 @@
-import { createNavitemController } from './navitemController.js';
-
-export function createTogglerMenuController(togglerMenuUseCases) {
-    const navitemController = createNavitemController(togglerMenuUseCases);
+function createTogglerMenuController(togglerMenuUseCases) {
     const togglerMenu = document.querySelector('.menu-toggler-js');
 
-    // TODO: unregister this event listener
-    togglerMenu.addEventListener('click', () => {
-        togglerMenuUseCases.toggle(navitemController);
-    });
+    function handleToggle() {
+        togglerMenuUseCases.toggle();
+    }
+
+    togglerMenu.addEventListener('click', handleToggle);
 }
+
+export default { createTogglerMenuController };
