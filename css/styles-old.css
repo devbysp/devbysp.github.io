@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap');
+
+/*----------------------------------- Title ----------------------------------*/
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title p {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    .title {
+        width: 50%;
+    }
+}
+
+.use-of-cookies {
+    color: var(--signature-color-light);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/*----------------------------------- HOME -----------------------------------*/
+.introduction em {
+    font-family: monospace;
+    font-style: normal;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    #home {
+        height: 100vh;
+        background-image: url('../images/profile-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    #home .rounded-profile-picture {
+        display: none;
+    }
+
+    .introduction {
+        width: 40%;
+        margin: 8% auto auto 8%;
+    }
+
+    .introduction .title {
+        width: 100%;
+        color: var(--gray-4);
+    }
+
+    .introduction .button {
+        color: var(--gray-9);
+        background-color: var(--gray-1);
+    }
+}
+
+@media (pointer: fine) and (pointer: fine) {
+    #home .rounded-profile-picture {
+        width: 33%;
+    }
+}
+
+/*----------------------------------- ABOUT ----------------------------------*/
+#about .rounded-profile-picture {
+    display: none;
+}
+
+.information .button {
+    margin-top: 5.6rem;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    #about .rounded-profile-picture {
+        display: block;
+    }
+
+    .nr-columns-2 {
+        --odd-column-width: 55%;
+        --even-column-width: 35%;
+    }
+}
+
+/*------------------------------------ PORTFOLIO -----------------------------*/
+#portfolio {
+    background-color: var(--signature-color);
+}
+
+#portfolio .title {
+    color: var(--gray-1);
+}
+
+.portfolio-project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    margin-top: 7rem;
+}
+
+.portfolio-project {
+    padding: 2.5rem 2rem;
+    margin: 0 2rem;
+    align-items: center;
+    background-color: var(--gray-0);
+    border-radius: 5px;
+}
+
+.portfolio-project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    .portfolio-project {
+        padding: 7rem 2rem;
+        margin: 0 4rem;
+    }
+
+    .portfolio-project img {
+        width: 40%;
+    }
+
+    .project-information {
+        width: 50%;
+    }
+}
+
+/*--------------------------------- CONTACT ----------------------------------*/
+#contact .form {
+    width: 90%;
+}
+
+textarea.input {
+    height: 20rem;
+}
+
+.form-buttons .button {
+    margin-top: 4rem;
+}
+
+@media (min-width: 1300px) and (pointer: fine) {
+    #contact .form {
+        width: 80rem;
+    }
+}
+
+/*---------------------------------- FOOTER ----------------------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    min-width: 600px;
+    height: 10rem;
+
+    font-size: 1.8rem;
+    background-color: var(--gray-0);
+}
+
+.footer p,
+a {
+    margin: 0;
+    width: 100%;
+    color: var(--accent-color);
+    font-family: Work Sans, sans-serif;
+    text-decoration: none;
+}
+
+.professional-site-links {
+    display: flex;
+    justify-content: center;
+
+    margin-right: 4rem;
+    width: auto;
+}
+
+.navicon.github {
+    margin-right: 1rem;
+    background-image: url('../icons/github-original.svg');
+}
+
+.navicon.linked-in {
+    background-image: url('../icons/linkedin-plain.svg');
+}
+
+.navicon.page-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+
+    background-color: var(--gray-2);
+    background-image: url('../icons/arrow-up.svg');
+
+    border: 1px solid var(--gray-2);
+    border-radius: 50%;
+}

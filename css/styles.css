@@ -1,205 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap');
-
-/*----------------------------------- Title ----------------------------------*/
-.title {
+/*----------------------------------- HOME -----------------------------------*/
+.introduction {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
     margin: 0 auto;
-}
-
-.title p {
-    font-size: 2.4rem;
-}
-
-@media (min-width: 1300px) and (pointer: fine) {
-    .title {
-        width: 50%;
-    }
-}
-
-.use-of-cookies {
-    color: var(--signature-color-light);
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-/*----------------------------------- HOME -----------------------------------*/
-.introduction em {
-    font-family: monospace;
-    font-style: normal;
-}
-
-@media (min-width: 1300px) and (pointer: fine) {
-    #home {
-        height: 100vh;
-        background-image: url('../images/profile-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center right;
-    }
-
-    #home .rounded-profile-picture {
-        display: none;
-    }
-
-    .introduction {
-        width: 40%;
-        margin: 8% auto auto 8%;
-    }
-
-    .introduction .title {
-        width: 100%;
-        color: var(--gray-4);
-    }
-
-    .introduction .button {
-        color: var(--gray-9);
-        background-color: var(--gray-1);
-    }
-}
-
-@media (pointer: fine) and (pointer: fine) {
-    #home .rounded-profile-picture {
-        width: 33%;
-    }
+    text-align: center;
 }
 
 /*----------------------------------- ABOUT ----------------------------------*/
-#about .rounded-profile-picture {
+.about-section {
+    background-color: var(--gray-0);
+}
+
+.information {
+    margin: 5.6rem auto 0;
+    width: 90%;
+}
+
+.about-section .rounded-profile-picture {
     display: none;
 }
 
-.information .button {
-    margin-top: 5.6rem;
-}
-
-@media (min-width: 1300px) and (pointer: fine) {
-    #about .rounded-profile-picture {
-        display: block;
-    }
-
-    .nr-columns-2 {
-        --odd-column-width: 55%;
-        --even-column-width: 35%;
-    }
-}
-
 /*------------------------------------ PORTFOLIO -----------------------------*/
-#portfolio {
+.portfolio-section {
     background-color: var(--signature-color);
 }
 
-#portfolio .title {
+.portfolio-section .title {
     color: var(--gray-1);
 }
 
 .portfolio-project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-    margin-top: 7rem;
+    width: 95%;
+    margin: 9rem auto 0;
 }
 
 .portfolio-project {
-    padding: 2.5rem 2rem;
-    margin: 0 2rem;
-    align-items: center;
+    padding: 3.5rem;
+    margin: 9rem 2.2rem;
     background-color: var(--gray-0);
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .portfolio-project img {
     width: 100%;
     border-radius: 5px;
-}
-
-@media (min-width: 1300px) and (pointer: fine) {
-    .portfolio-project {
-        padding: 7rem 2rem;
-        margin: 0 4rem;
-    }
-
-    .portfolio-project img {
-        width: 40%;
-    }
-
-    .project-information {
-        width: 50%;
-    }
+    box-shadow: var(--shadow);
 }
 
 /*--------------------------------- CONTACT ----------------------------------*/
-#contact .form {
+.form {
     width: 90%;
-}
-
-textarea.input {
-    height: 20rem;
-}
-
-.form-buttons .button {
-    margin-top: 4rem;
-}
-
-@media (min-width: 1300px) and (pointer: fine) {
-    #contact .form {
-        width: 80rem;
-    }
 }
 
 /*---------------------------------- FOOTER ----------------------------------*/
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-left: 2rem;
-    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: strech;
+    padding: 2rem;
     width: 100%;
-    min-width: var(--min-page-width);
-    height: 10rem;
-
-    font-size: 1.8rem;
     background-color: var(--gray-0);
 }
 
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .footer p,
-a {
-    margin: 0;
-    width: 100%;
+.footer a {
+    margin-top: 0;
     color: var(--accent-color);
-    font-family: Work Sans, sans-serif;
+    font-family: 'Footer', sans-serif;
+    font-size: 2rem;
     text-decoration: none;
 }
 
-.professional-site-links {
-    display: flex;
-    justify-content: center;
-
-    margin-right: 4rem;
-    width: auto;
+a.navicon {
+    font-size: 5.6rem;
+    justify-self: center;
+    align-self: center;
+    color: var(--signature-color);
 }
 
-.navicon.github {
-    margin-right: 1rem;
-    background-image: url('../icons/github-original.svg');
-}
-
-.navicon.linked-in {
-    background-image: url('../icons/linkedin-plain.svg');
-}
-
-.navicon.page-top {
+.navicon .fa-circle-arrow-up {
     position: fixed;
-    bottom: 3rem;
-    right: 1rem;
+    bottom: 2.8rem;
+    right: 2rem;
 
-    background-color: var(--gray-2);
-    background-image: url('../icons/arrow-up.svg');
-
-    border: 1px solid var(--gray-2);
+    background-color: var(--gray-0);
+    border: 1px solid var(--gray-0);
     border-radius: 50%;
+}
+
+.navicon .fa-circle-arrow-up.static-position {
+    position: static;
 }

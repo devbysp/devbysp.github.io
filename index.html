@@ -25,20 +25,21 @@
             sizes="16x16"
             href="./favicon/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     </head>
 
     <body>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <header>
+        <header class="container">
             <nav class="navbar">
                 <article class="signature">
                     <span class="logo">SP</span>
                     <h2 class="developer">Zoltán Magyari</h2>
                 </article>
 
-                <button class="menu-toggler menu-toggler-js">
-                    <i class="menu-icon material-symbols-outlined">menu</i>
-                </button>
+                <i class="fa-solid fa-bars menu-toggler menu-toggler-js"></i>
 
                 <ul class="navmenu navmenu-js">
                     <li class="navitem navitem-js">
@@ -57,21 +58,22 @@
             </nav>
         </header>
 
-        <main>
+        <main class="container">
             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <div id="home" class="page">
+            <div id="home" class="section home-section">
                 <img
                     src="./images/profile.jpg"
                     alt="round profile picture"
                     class="rounded-profile-picture" />
 
-                <div class="introduction responsive-wrap">
+                <div class="introduction">
                     <article class="title">
                         <h2>Hi, I'm Zoltán</h2>
                         <p>
-                            I'm a web developer creating responsive websites. I value
-                            simple content structure, clean design, and thoughtful 
-                            interactions, that achieves your business goals.
+                            I'm a web developer creating responsive websites. I
+                            value simple content structure, clean design, and
+                            thoughtful interactions, that achieves your business
+                            goals.
                         </p>
                     </article>
 
@@ -82,7 +84,7 @@
             </div>
 
             <!--~~~~~~~~~~~~~~~~~~~~~~~ About me ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <div id="about" class="page">
+            <div id="about" class="section about-section">
                 <img
                     src="./images/profile.jpg"
                     alt="round profile picture"
@@ -97,8 +99,8 @@
                     </p>
                 </div>
 
-                <div class="information inline-block-container nr-columns-2">
-                    <article class="history inline-block-item">
+                <div class="information">
+                    <article class="history">
                         <h3>My short history</h3>
 
                         <p>
@@ -118,29 +120,30 @@
                         </p>
                     </article>
 
-                    <article class="skills inline-block-item">
+                    <article class="skills">
                         <h3>My skills</h3>
 
-                        <span class="chip light-shadow">HTML</span>
-                        <span class="chip light-shadow">CSS</span>
-                        <span class="chip light-shadow">JavaScript</span>
-                        <span class="chip light-shadow">TypeScript</span>
-                        <span class="chip light-shadow">React</span>
-                        <span class="chip light-shadow">Git</span>
-                        <span class="chip light-shadow">Java</span>
-                        <span class="chip light-shadow">Docker</span>
-                        <span class="chip light-shadow">Kubernetes</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">React</span>
+                        <span class="chip">Git</span>
+                        <span class="chip">Java</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Kubernetes</span>
                     </article>
 
-                    <div class="inline-block-item">
-                        <a href="#contact" class="button button-primary">Contact</a>
+                    <div class="button-group">
+                        <a href="#contact" class="button button-primary"
+                            >Contact</a
+                        >
                     </div>
                 </div>
-
             </div>
 
             <!--~~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <div id="portfolio" class="page">
+            <div id="portfolio" class="section portfolio-section">
                 <div class="title">
                     <h2>Portfolio</h2>
                     <p>
@@ -150,11 +153,10 @@
                 </div>
 
                 <div class="portfolio-project-container">
-                    <div class="portfolio-project responsive-wrap">
+                    <div class="portfolio-project">
                         <img
                             src="./images/project-1.jpg"
-                            alt="The first portfolio project"
-                            class="shadow" />
+                            alt="The first portfolio project" />
 
                         <article class="project-information">
                             <h3>First project</h3>
@@ -174,11 +176,10 @@
                         </article>
                     </div>
 
-                    <div class="portfolio-project responsive-wrap">
+                    <div class="portfolio-project">
                         <img
                             src="./images/project-2.jpg"
-                            alt="The scond portfolio project"
-                            class="shadow" />
+                            alt="The scond portfolio project" />
 
                         <article class="project-information">
                             <h3>Second project</h3>
@@ -198,11 +199,10 @@
                         </article>
                     </div>
 
-                    <div class="portfolio-project responsive-wrap">
+                    <div class="portfolio-project">
                         <img
                             src="./images/project-3.jpg"
-                            alt="The third portfolio project"
-                            class="shadow" />
+                            alt="The third portfolio project" />
 
                         <article class="project-information">
                             <h3>Third project</h3>
@@ -225,7 +225,7 @@
             </div>
 
             <!--~~~~~~~~~~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <article id="contact" class="page">
+            <article id="contact" class="section contact-section">
                 <div class="title">
                     <h2>Contact me</h2>
                     <p>
@@ -237,7 +237,7 @@
                 <form
                     action="https://formspree.io/f/xoqzkvpz"
                     method="POST"
-                    class="form shadow">
+                    class="form">
                     <label for="name">
                         Name
                         <input
@@ -281,7 +281,7 @@
                             class="input"></textarea>
                     </label>
 
-                    <div class="form-buttons">
+                    <div class="button-group">
                         <button type="submit" class="button button-primary">
                             Send
                         </button>
@@ -289,36 +289,51 @@
                 </form>
             </article>
 
-            <div class="toaster responsive-wrap toaster-container-js">
+            <div class="toaster toaster-container-js">
                 <section class="dialog headless-dialog">
-                    <button class="dialog-close-button cookie-dialog-close-button-js">&#xd7</button>
+                    <button
+                        class="dialog-close-button cookie-dialog-close-button-js">
+                        ×
+                    </button>
 
                     <div class="dialog-content">
                         <span class="dialog-message">
-                            Cookies help us to deliver best user exprience on our website. By using the website, you agree the use of
-                            cookies. 
-                        </span><a href="#" class="use-of-cookies">Find out how we use cookies.</a>
+                            Cookies help us to deliver best user exprience on
+                            our website. By using the website, you agree the use
+                            of cookies. </span
+                        ><a href="#" class="use-of-cookies"
+                            >Find out how we use cookies.</a
+                        >
                     </div>
                 </section>
             </div>
         </main>
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <footer class="footer">
-            <div class="responsive-wrap">
+        <footer class="container section footer">
+            <div class="footer-information">
                 <p><strong>Copyright</strong> &copy; 2023 Zoltán Magyari</p>
-                <a href="mailto:devbysp@proton.me"
-                    ><strong>Email:</strong> devbysp@proton.me</a
-                >
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:devbysp@proton.me">devbysp@proton.me</a>
+                </p>
                 <p><strong>Mobile:</strong> +40 746 964 062</p>
+                <!-- TODO: Remove this line. It is there to display the resolution of devices -->
+                <p class="screen-resolution-js"></p>
             </div>
 
-            <div class="professional-site-links">
-                <a href="#" class="navicon github"></a>
-                <a href="#" class="navicon linked-in"></a>
+            <div class="navicon-container">
+                <a href="#" class="navicon"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="#" class="navicon"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="#" class="navicon"
+                    ><i
+                        class="fa-solid fa-circle-arrow-up static-position arrow-up-icon-js"></i
+                ></a>
             </div>
-
-            <a href="#" class="navicon page-top"></a>
         </footer>
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

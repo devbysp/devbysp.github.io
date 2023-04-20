@@ -1,14 +1,27 @@
 import { createNavigationMenuPresenter } from './src/navmenu/presenter/navigationMenuPresenter.js';
 import { createTogglerMenuUseCases } from './src/navmenu/usecase/togglerMenuUseCases.js';
 import { createTogglerMenuController } from './src/navmenu/controller/togglerMenuController.js';
-import { createCookieMessagePresenter } from './src/cookies/presenter/cookieMessagePresenter.js';
-import { createCookieMessageUseCases } from './src/cookies/usecase/cookieMessageUseCases.js';
-import { createCookieMessageController } from './src/cookies/controller/cookieMessageController.js';
+import CookieMessagePresenter from './src/cookies/presenter/cookieMessagePresenter.js';
+import CookieMessageUseCases from './src/cookies/usecase/cookieMessageUseCases.js';
+import CookieMessageController from './src/cookies/controller/cookieMessageController.js';
+import ArrowUpIconPresenter from './src/arrow-up/presenter/arrowUpIconPresenter.js';
+import ArrowUpIconUseCase from './src/arrow-up/usecase/arrowUpIconUseCase.js';
+import ArrowUpIconController from './src/arrow-up/controller/arrowUpIconController.js';
 
 const navigationMenuPresenter = createNavigationMenuPresenter();
 const togglerMenuUseCases = createTogglerMenuUseCases(navigationMenuPresenter);
 createTogglerMenuController(togglerMenuUseCases);
 
-const cookieMessagePresenter = createCookieMessagePresenter();
-const cookieMessageUseCases = createCookieMessageUseCases(cookieMessagePresenter);
-createCookieMessageController(cookieMessageUseCases);
+const cookieMessagePresenter = CookieMessagePresenter.createCookieMessagePresenter();
+const cookieMessageUseCases = CookieMessageUseCases.createCookieMessageUseCases(
+    cookieMessagePresenter,
+);
+CookieMessageController.createCookieMessageController(cookieMessageUseCases);
+
+const arrowUpIconPresenter = ArrowUpIconPresenter.createArrowUpIconPresenter();
+const arrowUpIconUseCase = ArrowUpIconUseCase.createArrowUpIconUseCase(arrowUpIconPresenter);
+ArrowUpIconController.createArrowUpIconController(arrowUpIconUseCase);
+
+// TODO: Remove this code! It is there to display the resolution of devices.
+const screenResolution = document.querySelector('.screen-resolution-js');
+screenResolution.innerHTML = `<strong>Resolution:</strong> ${window.screen.width} x ${window.screen.height} (${window.devicePixelRatio})`;
