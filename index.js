@@ -29,4 +29,4 @@ ArrowUpIconController.createArrowUpIconController(arrowUpIconUseCase);
 
 // TODO: Remove this code! It is there to display the resolution of devices.
 const screenResolution = document.querySelector('.screen-resolution-js');
-screenResolution.innerHTML = `<strong>Resolution:</strong> ${window.screen.width} x ${window.screen.height} (${window.devicePixelRatio})`;
+screenResolution.innerHTML = `<strong>Resolution:</strong> ${window.screen.width} x ${window.screen.height} (${window.devicePixelRatio}) - V0.0`;

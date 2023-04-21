@@ -101,12 +101,6 @@
     filter: brightness(98%);
 }
 
-@media (min-width: 960px) and (pointer: fine) {
-    .menu-toggler.fa-solid.fa-bars {
-        display: none;
-    }
-}
-
 /*------------------------------ Navigation menu -----------------------------*/
 .navmenu {
     display: flex;
@@ -144,20 +138,6 @@
 
 .navmenu:not(.show) {
     display: none;
-}
-
-@media (min-width: 960px) and (pointer: fine) {
-    .navmenu {
-        flex-direction: row;
-        gap: 4rem;
-        margin-top: 0;
-        padding-left: 0;
-        width: fit-content;
-    }
-
-    .navmenu:not(.show) {
-        display: flex;
-    }
 }
 
 /*---------------------------- Navigation container --------------------------*/
@@ -231,12 +211,6 @@ label textarea.input {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-}
-
-@media (pointer: fine) {
-    .title {
-        margin: 5.6rem auto 0;
-    }
 }
 
 /*--------------------------------- Button group -----------------------------*/
