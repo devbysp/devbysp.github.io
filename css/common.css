@@ -55,6 +55,7 @@
     display: block;
     margin: 5.6em auto 0;
     width: 70%;
+    max-width: 35rem;
     border-radius: 50%;
 }
 
@@ -209,7 +210,7 @@
     text-shadow: var(--shadow--text);
 }
 
-@media (pointer: fine) {
+@media (min-width: 720px) {
     .navmenu {
         flex-direction: row;
         gap: 4rem;
@@ -225,7 +226,12 @@
     i.menu-toggler {
         display: none;
     }
+
+    .navlink {
+        font-size: 3.2rem;
+    }
 }
+
 /*---------------------------- Navigation container --------------------------*/
 .navicon-container {
     display: flex;
@@ -366,6 +372,12 @@ label > textarea.input {
     flex-direction: row-reverse;
 }
 
+@media (min-width: 720px) {
+    .form {
+        max-width: 90rem;
+    }
+}
+
 /* -------------------------------------------------------------------------- *
  *                                    Toaster
  * -------------------------------------------------------------------------- */
@@ -378,6 +390,7 @@ label > textarea.input {
     padding: 1rem;
     width: 100%;
     min-width: 360px;
+    max-width: 80rem;
 
     position: sticky;
     bottom: 2rem;

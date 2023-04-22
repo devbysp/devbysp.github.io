@@ -5,6 +5,10 @@ footer {
     min-width: 360px;
 }
 
+.title {
+    max-width: 68rem;
+}
+
 .title p {
     font-size: 2.2rem;
 }
