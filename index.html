@@ -35,11 +35,12 @@
         <header class="container">
             <nav class="navbar">
                 <article class="signature">
-                    <span class="logo">SP</span>
-                    <h2 class="developer">Zoltán Magyari</h2>
+                    <span class="signautre__logo">SP</span>
+                    <h2 class="signature__name">Zoltán Magyari</h2>
                 </article>
 
-                <i class="fa-solid fa-bars menu-toggler menu-toggler-js"></i>
+                <i
+                    class="fa-solid fa-bars menu-toggler button--float menu-toggler-js"></i>
 
                 <ul class="navmenu navmenu-js">
                     <li class="navitem navitem-js">
@@ -77,7 +78,9 @@
                         </p>
                     </article>
 
-                    <a href="#portfolio" class="button button-primary"
+                    <a
+                        href="#portfolio"
+                        class="button button--primary button--float"
                         >Portfolio</a
                     >
                 </div>
@@ -123,11 +126,11 @@
                     <article class="skills">
                         <h3>My skills</h3>
 
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">TypeScript</span>
                         <span class="chip">React</span>
                         <span class="chip">HTML</span>
                         <span class="chip">CSS</span>
-                        <span class="chip">JavaScript</span>
-                        <span class="chip">TypeScript</span>
                         <span class="chip">Java</span>
                         <span class="chip">Kubernetes</span>
                         <span class="chip">Docker</span>
@@ -135,7 +138,9 @@
                     </article>
 
                     <div class="button-group">
-                        <a href="#contact" class="button button-primary"
+                        <a
+                            href="#contact"
+                            class="button button--primary button--float"
                             >Contact</a
                         >
                     </div>
@@ -168,10 +173,14 @@
                             </p>
 
                             <div class="button-group">
-                                <a class="button button-primary" href="#"
+                                <a
+                                    class="button button--primary button--float"
+                                    href="#"
                                     >Preview</a
                                 >
-                                <a class="button" href="#">Git Repo</a>
+                                <a class="button button--float" href="#"
+                                    >Git Repo</a
+                                >
                             </div>
                         </article>
                     </div>
@@ -191,10 +200,14 @@
                             </p>
 
                             <div class="button-group">
-                                <a class="button button-primary" href="#"
+                                <a
+                                    class="button button--primary button--float"
+                                    href="#"
                                     >Preview</a
                                 >
-                                <a class="button" href="#">Git Repo</a>
+                                <a class="button button--float" href="#"
+                                    >Git Repo</a
+                                >
                             </div>
                         </article>
                     </div>
@@ -214,10 +227,14 @@
                             </p>
 
                             <div class="button-group">
-                                <a class="button button-primary" href="#"
+                                <a
+                                    class="button button--primary button--float"
+                                    href="#"
                                     >Preview</a
                                 >
-                                <a class="button" href="#">Git Repo</a>
+                                <a class="button button--float" href="#"
+                                    >Git Repo</a
+                                >
                             </div>
                         </article>
                     </div>
@@ -282,7 +299,9 @@
                     </label>
 
                     <div class="button-group">
-                        <button type="submit" class="button button-primary">
+                        <button
+                            type="submit"
+                            class="button button--primary button--float">
                             Send
                         </button>
                     </div>
@@ -290,13 +309,13 @@
             </article>
 
             <div class="toaster toaster-container-js">
-                <section class="dialog headless-dialog">
+                <section class="dialog dialog--no-header">
                     <button
-                        class="dialog-close-button cookie-dialog-close-button-js">
+                        class="dialog__close-button button--float cookie-dialog-close-button-js">
                         ×
                     </button>
 
-                    <div class="dialog-content">
+                    <div class="dialog__content">
                         <span class="dialog-message">
                             Cookies help us to deliver best user exprience on
                             our website. By using the website, you agree the use
@@ -311,29 +330,33 @@
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <footer class="container section footer">
-            <div class="footer-information">
-                <p><strong>Copyright</strong> &copy; 2023 Zoltán Magyari</p>
-                <p>
+            <div class="footer__information">
+                <p class="footer__note">
+                    <strong>Copyright</strong> &copy; 2023 Zoltán Magyari
+                </p>
+                <p class="footer__note">
                     <strong>Email:</strong>
                     <a href="mailto:devbysp@proton.me">devbysp@proton.me</a>
                 </p>
-                <p><strong>Mobile:</strong> +40 746 964 062</p>
-                <p><strong>App version:</strong> v0.5</p>
+                <p class="footer__note">
+                    <strong>Mobile:</strong> +40 746 964 062
+                </p>
+                <p class="footer__note"><strong>App version:</strong> v0.6</p>
             </div>
 
             <div>
                 <!-- TODO: Remove this line. It is there to display the resolution of devices -->
-                <p class="screen-resolution-js"></p>
+                <p class="footer__note screen-resolution-js"></p>
             </div>
 
             <div class="navicon-container">
-                <a href="#" class="navicon"
+                <a href="#" class="footer__note navicon"
                     ><i class="fa-brands fa-github"></i
                 ></a>
-                <a href="#" class="navicon"
+                <a href="#" class="footer__note navicon"
                     ><i class="fa-brands fa-linkedin"></i
                 ></a>
-                <a href="#" class="navicon"
+                <a href="#" class="footer__note navicon"
                     ><i
                         class="fa-solid fa-circle-arrow-up static-position arrow-up-icon-js"></i
                 ></a>

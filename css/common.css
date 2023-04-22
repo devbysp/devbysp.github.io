@@ -14,27 +14,131 @@
         format('truetype');
 }
 
+/* -------------------------------------------------------------------------- *
+ *                                   Globals
+ * -------------------------------------------------------------------------- */
 :root {
-    --light-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.1),
+    --shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.1),
         0px 6px 32px 0 rgba(0, 0, 0, 0.05);
-    --shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.35),
-        0px 6px 32px 0 rgba(0, 0, 0, 0.25);
-    --small-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    --shadow--small: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    --shadow--text: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    --shadow--dialog: 0px 4px 16px 0 rgba(0, 0, 0, 0.25),
+        0px 6px 32px 0 rgba(0, 0, 0, 0.15);
 
-    --dialog-shadow: 0px 4px 16px 0 rgba(0, 0, 0, 0.35),
-        0px 6px 32px 0 rgba(0, 0, 0, 0.25);
-
-    --button-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-    --elevated-button-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
-
-    --toggler-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
-    --elevated-toggler-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-
-    --dialog-close-button-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-    --elevated-dialog-close-button-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    --shadow--button: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    --shadow--button-elevated: 3px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-/*------------------------------------ Navbar --------------------------------*/
+/* -------------------------------------------------------------------------- *
+ *                                    Chip
+ * -------------------------------------------------------------------------- */
+.chip {
+    display: inline-block;
+
+    margin: 20px 20px 0 0;
+    padding: 15px 20px 10px;
+
+    color: var(--gray-8);
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-4);
+    border-radius: 6px;
+
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* -------------------------------------------------------------------------- *
+ *                              Profile pictures 
+ * -------------------------------------------------------------------------- */
+.rounded-profile-picture {
+    display: block;
+    margin: 5.6em auto 0;
+    width: 70%;
+    border-radius: 50%;
+}
+
+/* -------------------------------------------------------------------------- *
+ *                                   Button
+ * -------------------------------------------------------------------------- */
+.button {
+    display: block;
+    margin-top: 3.5rem;
+    padding: 1.6rem 0;
+    width: 16rem;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+
+    color: var(--gray-9);
+    background-color: var(--gray-1);
+
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+.button--primary {
+    color: var(--gray-1);
+    background-color: var(--signature-color);
+}
+
+.button--float {
+    box-shadow: var(--shadow--button);
+}
+
+.button--float:hover {
+    transform: translateX(-1px) translateY(-1px);
+    box-shadow: var(--shadow--button-elevated);
+    filter: brightness(96%);
+}
+
+/*--------------------------------- Button group -----------------------------*/
+.button-group {
+    display: flex;
+    gap: 3.5rem;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------- *
+ *                                   Signature
+ * -------------------------------------------------------------------------- */
+.signature {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    min-width: 5rem;
+}
+
+.signautre__logo {
+    margin: 0;
+    padding: 1rem 1rem 0.5rem;
+    width: fit-content;
+
+    color: var(--gray-0);
+    background-color: var(--signature-color);
+
+    font-family: 'Logo', cursive, sans-serif;
+    font-size: 3rem;
+    border-radius: 0.5rem;
+}
+
+.signature__name {
+    margin-top: 0;
+    padding-left: 1rem;
+
+    color: var(--gray-9);
+
+    font-family: 'Navbar Title', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- *
+ *                                     Navbar
+ * -------------------------------------------------------------------------- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -43,42 +147,13 @@
 
     position: fixed;
     top: 0;
+
     padding: 1rem;
     width: 100%;
     min-width: 47rem;
 
     background-color: var(--gray-0);
-    box-shadow: var(--small-shadow);
-}
-
-/*---------------------------------- Signature -------------------------------*/
-.signature {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    min-width: 5rem;
-}
-
-.logo {
-    margin: 0;
-    padding: 1rem 1rem 0.5rem;
-    width: fit-content;
-    color: var(--gray-0);
-    background-color: var(--signature-color);
-    font-family: 'Logo', cursive, sans-serif;
-    font-size: 3rem;
-    border-radius: 0.5rem;
-}
-
-.developer {
-    margin-top: 0;
-    padding-left: 1rem;
-    color: var(--gray-9);
-    font-family: 'Navbar Title', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    box-shadow: var(--shadow--small);
 }
 
 /*-------------------------------- Toggler menu ------------------------------*/
@@ -86,19 +161,15 @@
     width: 5rem;
     height: 5rem;
     padding: 1rem;
+
     font-size: 3rem;
     text-align: center;
+
     color: var(--signature-color);
     background-color: var(--gray-2);
+
     border: 1px solid var(--gray-2);
     border-radius: 5px;
-    box-shadow: var(--toggler-shadow);
-}
-
-.menu-toggler:hover {
-    transform: translateX(-1px) translateY(-1px);
-    box-shadow: var(--elevated-toggler-shadow);
-    filter: brightness(98%);
 }
 
 /*------------------------------ Navigation menu -----------------------------*/
@@ -111,18 +182,8 @@
     list-style-type: none;
 }
 
-.navitem * {
-    margin-top: 0;
-    padding: 1.25rem;
-    font-size: 3.5rem;
-}
-
-.navlink {
-    display: block;
-    width: 100%;
-    color: var(--gray-9);
-    text-decoration: none;
-    letter-spacing: -2px;
+.navmenu:not(.show) {
+    display: none;
 }
 
 .navitem:hover {
@@ -131,27 +192,21 @@
     background-color: var(--signature-color-light);
 }
 
+.navlink {
+    display: block;
+    margin-top: 0;
+    padding: 1.25rem;
+    width: 100%;
+
+    color: var(--gray-9);
+    font-size: 3.5rem;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+
 .navitem:hover .navlink {
     color: var(--gray-2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.navmenu:not(.show) {
-    display: none;
-}
-
-@media (min-width: 960px) and (pointer: fine) {
-    .navmenu {
-        flex-direction: row;
-        gap: 4rem;
-        margin-top: 0;
-        padding-left: 0;
-        width: fit-content;
-    }
-
-    .navmenu:not(.show) {
-        display: flex;
-    }
+    text-shadow: var(--shadow--text);
 }
 
 /*---------------------------- Navigation container --------------------------*/
@@ -161,61 +216,18 @@
     gap: 2rem;
 }
 
-/*------------------------------------ Form ----------------------------------*/
-.form {
-    margin: 9rem auto 0;
-    padding: 3.5rem;
-    background-color: var(--gray-0);
-    border: 1px solid var(--gray-3);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-}
-
-label {
-    box-sizing: border-box;
-    display: block;
-    margin-top: 3.5rem;
-    color: var(--gray-7);
-    font-size: 2rem;
-}
-
-label .input {
-    box-sizing: border-box;
-    display: block;
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: var(--gray-6);
-    border: 1px solid var(--gray-3);
-    border-radius: 5px;
-}
-
-label textarea.input {
-    resize: vertical;
-}
-
-.form .button-group {
-    flex-direction: row-reverse;
-}
-
-/*----------------------------- Profile pictures -----------------------------*/
-.rounded-profile-picture {
-    display: block;
-    margin: 5.6em auto 0;
-    width: 70%;
-    border-radius: 50%;
-}
-
-/*------------------------------------ Page ----------------------------------*/
+/* -------------------------------------------------------------------------- *
+ *                                   Section   
+ * -------------------------------------------------------------------------- */
 .section {
     width: 100%;
     padding-top: 9rem;
     padding-bottom: 14rem;
 }
 
-/*----------------------------------- Title ----------------------------------*/
+/* -------------------------------------------------------------------------- *
+ *                                    Title    
+ * -------------------------------------------------------------------------- */
 .title {
     display: flex;
     flex-direction: column;
@@ -226,65 +238,9 @@ label textarea.input {
     text-align: center;
 }
 
-/*--------------------------------- Button group -----------------------------*/
-.button-group {
-    display: flex;
-    gap: 3.5rem;
-    width: 100%;
-}
-
-/*----------------------------------- Button ---------------------------------*/
-.button {
-    --font-size: 2rem;
-
-    display: block;
-    margin: 3.5rem 0 0;
-    padding: 1.6rem 0;
-    width: 16rem;
-
-    text-align: center;
-    text-decoration: none;
-    font-size: 2rem;
-
-    color: var(--gray-9);
-    background-color: var(--gray-1);
-
-    border: 1px solid var(--button-bg-color);
-    border-radius: 1rem;
-    box-shadow: var(--button-shadow);
-}
-
-.button-primary {
-    color: var(--gray-1);
-    background-color: var(--signature-color);
-}
-
-.button:hover {
-    transform: translateX(-1px) translateY(-1px);
-    box-shadow: var(--elevated-button-shadow);
-    filter: brightness(96%);
-}
-
-.button-primary:hover {
-    filter: brightness(120%);
-}
-
-/*----------------------------------- Chip -----------------------------------*/
-.chip {
-    display: inline-block;
-
-    margin: 20px 20px 0 0;
-    padding: 15px 20px 10px;
-
-    font-family: monospace;
-    font-size: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    background-color: var(--gray-3);
-    border-radius: 6px;
-    box-shadow: var(--light-shadow);
-}
-
-/*----------------------------------- Dialog ---------------------------------*/
+/* -------------------------------------------------------------------------- *
+ *                                    Dialog   
+ * -------------------------------------------------------------------------- */
 .dialog {
     display: grid;
     grid-template-columns: auto min-content;
@@ -293,58 +249,55 @@ label textarea.input {
     grid-row-gap: 1rem;
     padding: 1rem 1rem 2rem;
     margin: 0.5rem;
+
     background-color: var(--accent-color);
     opacity: 0.95;
     border-radius: 10px;
-    box-shadow: var(--dialog-shadow);
+    box-shadow: var(--shadow--dialog);
 }
 
-.headless-dialog {
-    display: grid;
+.dialog--no-header {
     grid-template-columns: auto min-content;
     grid-template-rows: min-content;
     width: 100%;
 }
 
-.dialog-title {
+.dialog__title {
     margin: 0;
 }
 
-.dialog-close-button {
+.dialog__close-button {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     align-self: center;
+
     padding: 0.25rem;
     width: 3rem;
     height: 3rem;
     position: relative;
-    font-size: 2rem;
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-    border: 0;
-    border-radius: 50%;
+
     background: none;
     color: var(--gray-8);
     background-color: var(--gray-3);
-    box-shadow: var(--dialog-close-button-shadow);
+
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+
+    border: 0;
+    border-radius: 50%;
 }
 
-.headless-dialog .dialog-close-button {
+.dialog--no-header .dialog__close-button {
     align-self: start;
 }
 
-.dialog-close-button:hover {
-    transform: translateX(-1px) translateY(-1px);
-    box-shadow: var(--elevated-dialog-close-button-shadow);
-    filter: brightness(96%);
-}
-
-.dialog-content {
+.dialog__content {
     color: var(--gray-4);
     grid-column: 1 / span 2;
 }
 
-.headless-dialog .dialog-content {
+.dialog--no-header .dialog__content {
     grid-column: 1 / 2;
 }
 
@@ -352,17 +305,66 @@ label textarea.input {
     margin: 0;
 }
 
-/*---------------------------------- Toaster ---------------------------------*/
+/* -------------------------------------------------------------------------- *
+ *                                      Form 
+ * -------------------------------------------------------------------------- */
+.form {
+    margin: 9rem auto 0;
+    padding: 3.5rem;
+
+    background-color: var(--gray-0);
+
+    border: 1px solid var(--gray-3);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form > label {
+    display: block;
+    margin-top: 3.5rem;
+
+    color: var(--gray-7);
+    font-size: 2rem;
+}
+
+label > .input {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+
+    font-size: 2rem;
+    line-height: 1.5;
+
+    color: var(--gray-6);
+    border: 1px solid var(--gray-3);
+    border-radius: 5px;
+}
+
+label > textarea.input {
+    resize: vertical;
+}
+
+.form > .button-group {
+    flex-direction: row-reverse;
+}
+
+/* -------------------------------------------------------------------------- *
+ *                                    Toaster
+ * -------------------------------------------------------------------------- */
 .toaster {
     display: none;
     flex-direction: column;
     align-items: center;
+
     margin: 0 auto 2rem;
     padding: 1rem;
     width: 100%;
     min-width: 360px;
+
     position: sticky;
     bottom: 2rem;
+
     visibility: hidden;
 }
 

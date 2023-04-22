@@ -1,3 +1,4 @@
+/*----------------------------- Customizations -------------------------------*/
 header,
 main,
 footer {
@@ -53,6 +54,7 @@ footer {
 .portfolio-project {
     padding: 3.5rem;
     margin: 9rem 2.2rem;
+
     background-color: var(--gray-0);
     border-radius: 3px;
 }
@@ -75,20 +77,21 @@ footer {
     justify-content: center;
     align-content: strech;
     gap: 3.5rem;
+
     padding: 2rem;
     width: 100%;
+
     background-color: var(--gray-0);
 }
 
-.footer-information {
+.footer__information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
 }
 
-.footer p,
-.footer a {
+.footer__note {
     margin-top: 0;
     color: var(--accent-color);
     font-family: 'Footer', sans-serif;
@@ -96,10 +99,8 @@ footer {
     text-decoration: none;
 }
 
-a.navicon {
+.navicon {
     font-size: 5.6rem;
-    justify-self: center;
-    align-self: center;
     color: var(--signature-color);
 }
 
