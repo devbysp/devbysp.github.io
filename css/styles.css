@@ -73,7 +73,7 @@ footer {
 /*---------------------------------- FOOTER ----------------------------------*/
 .footer {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-areas: 'information' 'links';
     justify-content: center;
     align-content: strech;
     gap: 3.5rem;
@@ -85,6 +85,8 @@ footer {
 }
 
 .footer__information {
+    grid-area: information;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,6 +99,10 @@ footer {
     font-family: 'Footer', sans-serif;
     font-size: 2rem;
     text-decoration: none;
+}
+
+.navicon-container {
+    grid-area: links;
 }
 
 .navicon {
@@ -118,4 +124,20 @@ footer {
 .navicon .fa-circle-arrow-up.static-position {
     position: static;
     box-shadow: none;
+}
+
+@media (min-width: 540px) {
+    .footer {
+        grid-template-areas: 'information links';
+        justify-content: space-between;
+    }
+
+    .footer__information {
+        text-align: start;
+    }
+
+    .navicon-container {
+        justify-content: flex-end;
+        align-items: center;
+    }
 }

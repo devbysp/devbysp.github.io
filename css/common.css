@@ -209,6 +209,23 @@
     text-shadow: var(--shadow--text);
 }
 
+@media (pointer: fine) {
+    .navmenu {
+        flex-direction: row;
+        gap: 4rem;
+        margin-top: 0;
+        padding-left: 0;
+        width: fit-content;
+    }
+
+    .navmenu:not(.show) {
+        display: flex;
+    }
+
+    i.menu-toggler {
+        display: none;
+    }
+}
 /*---------------------------- Navigation container --------------------------*/
 .navicon-container {
     display: flex;
