@@ -211,7 +211,6 @@ label textarea.input {
 /*------------------------------------ Page ----------------------------------*/
 .section {
     width: 100%
-    min-width: 50rem;
     padding-top: 9rem;
     padding-bottom: 14rem;
 }
@@ -294,7 +293,6 @@ label textarea.input {
     grid-row-gap: 1rem;
     padding: 1rem 1rem 2rem;
     margin: 0.5rem;
-    min-width: 75%;
     background-color: var(--accent-color);
     opacity: 0.95;
     border-radius: 10px;
@@ -305,7 +303,7 @@ label textarea.input {
     display: grid;
     grid-template-columns: auto min-content;
     grid-template-rows: min-content;
-    width: 40%;
+    width: 100%;
 }
 
 .dialog-title {
@@ -360,8 +358,9 @@ label textarea.input {
     flex-direction: column;
     align-items: center;
     margin: 0 auto 2rem;
+    padding: 1rem;
     width: 100%;
-    min-width: 500px;
+    min-width: 360px;
     position: sticky;
     bottom: 2rem;
     visibility: hidden;
