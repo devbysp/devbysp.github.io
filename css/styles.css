@@ -82,15 +82,20 @@ footer {
     .information {
         display: grid;
         grid-template-columns: auto 48rem;
-        gap: 2rem;
+        gap: 8rem;
     }
 }
 
 @media (min-width: 1140px) {
     .information {
-        display: grid;
+        margin-top: 9rem;
+        grid-template-columns: auto 50rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .information {
         grid-template-columns: auto 65rem;
-        gap: 2rem;
     }
 }
 
