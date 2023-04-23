@@ -93,6 +93,7 @@ footer {
         gap: 2rem;
     }
 }
+
 /*------------------------------------ PORTFOLIO -----------------------------*/
 .portfolio-section {
     background-color: var(--signature-color);
@@ -132,6 +133,22 @@ footer {
 
     .portfolio-project_title {
         margin-top: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .portfolio-project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    .portfolio-project {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
     }
 }
 
