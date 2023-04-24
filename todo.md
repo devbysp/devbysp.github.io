@@ -1,12 +1,12 @@
 # Todo
 
 -   [x] A bemutatkozó szöveg többféle font-family használatára kitalálni egy megoldást.
--   [ ] Telefonszám legyen opcionális az űrlapon.
--   [ ] A kötelező mezők label-jére tenni egy csillagot.
+-   [x] Telefonszám legyen opcionális az űrlapon.
+-   [x] A kötelező mezők label-jére tenni egy csillagot.
 -   [x] A message mezőnél meg kell akadályozni a vizszintes átméretezést.
 -   [ ] A mezők validálást egy kicsit desig-nosabbra csinálni. (piros keret vagy estleg egy kis piros ikon megjelenítése a szövegmezőben).
 -   [x] ~A saját telefonszám helyett valamilyen másik link megosztása. (esetleg egy szöveg: solid principles).~
--   [ ] Bizonyos szövegeknél letiltani a kijelölést.
+-   [x] ~Bizonyos szövegeknél letiltani a kijelölést~.
 -   [x] A navbarnak kell egy min-width. (meg kell akadályozni, hogy a hamburger menu újsorba csússzon.
 -   [x] Kell egy fehér háttér a top butonnak (nyíl ikon). Elevsztődik a sötét hátterek felett.
 -   [x] Lehet szellősebb. Például a rólam szekcióban függőlegesen túl közel vannak egymáshoz az elemek.
