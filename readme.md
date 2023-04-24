@@ -8,6 +8,8 @@ This project is about giving an brief insight into my skill, expertiese and exam
 
 ## Running the app
 
+### Live server
+
 It is a HTML, CSS and JavaScript web page. It does not require any type of build process. It just has to be exposed in a web server. In the initial phase of the development locally I used [live-server](https://www.npmjs.com/package/live-server). The command to run the web page locally was:
 
 ```shell
@@ -19,6 +21,8 @@ The command should be executed in a shell.
 -   The `-q` stands for quiet mode. No log will be written to the standard output.
 -   The `--no-browser` will stop the live-server to launch the default browser and open the page in a new tab.
 -   The `--port=10000` will expose the page on the port 10000. The URL will be [http://localhost:10000](http://localhost:10000)
+
+### Docker container
 
 My goal is to dockerize the page to be easely deployable and to automate the deployment process. In order to do that the next phase is to set up a docker environment locally. To read more about how to setup a docker desktop locally, please follow this link [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop).
 
@@ -37,10 +41,13 @@ Inside the docker I used the nginx web server. For further inforrmations please 
 
 ## Releases
 
+### v2.1
+
+-   Creating a readme
+
 ### v2.0
 
 -   Fixing review comments.
--   Creating a readme
 
 ### v1.0
 
