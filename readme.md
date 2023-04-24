@@ -39,6 +39,15 @@ Inside the docker I used the nginx web server. For further inforrmations please 
 -   The `-v` option creates a volume. It will mount a folder of the host (/path/to/webpage) into a folder (/usr/share/nginx/htlm) of the docker container.
 -   The `-p` defines a port mapping. The fist port (10000) defines the port on which the host machine can reach the web page. The second port defines the port of the docker on which the docker itself exposes the web page.
 
+### Docker file
+
+A custom docker image can be described with a [Dockerfile](./Dockerfile). By running building command on the docker file the custom docker image will be created. To build a docker image the following shell command has to be executed. It should be executed in the root folder in which the docker file is placed.
+
+```shell
+docker build --tag portfolio .
+docker run -d -p 10000:80 portfolio
+```
+
 ## Releases
 
 ### v2.1
