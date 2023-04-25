@@ -23,7 +23,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1200px) {
     .home-section {
         height: 100vh;
         background-image: url('../images/profile-bg.jpg');
@@ -58,7 +58,9 @@ footer {
 }
 
 .information {
-    margin: 5.6rem auto 0;
+    --vertical-gap: 5.6rem;
+
+    margin: 3.5rem auto 0;
     width: 90%;
 }
 
@@ -66,39 +68,28 @@ footer {
     display: none;
 }
 
-.about-section .button-group {
+.about-section .button-group .button {
     margin-top: 3.5rem;
 }
 
-@media (min-width: 800px) {
-    .information {
-        display: grid;
-        grid-template-columns: auto 50rem;
-        gap: 2rem;
-    }
-}
-
 @media (min-width: 960px) {
-    .information {
-        display: grid;
-        grid-template-columns: auto 48rem;
-        gap: 8rem;
+    .information .history {
+        display: inline-block;
+        width: 50%;
+        margin-right: auto;
+    }
+
+    .information .skills {
+        display: inline-block;
+        width: 40%;
     }
 }
 
-@media (min-width: 1140px) {
-    .information {
-        margin-top: 9rem;
-        grid-template-columns: auto 50rem;
+@media (min-width: 1200px) {
+    .about-section .rounded-profile-picture {
+        display: block;
     }
 }
-
-@media (min-width: 1400px) {
-    .information {
-        grid-template-columns: auto 65rem;
-    }
-}
-
 /*------------------------------------ PORTFOLIO -----------------------------*/
 .portfolio-section {
     background-color: var(--signature-color);
