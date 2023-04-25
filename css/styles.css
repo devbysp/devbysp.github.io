@@ -108,14 +108,13 @@ footer {
     color: var(--gray-1);
 }
 
-.portfolio-project-container {
-    width: 95%;
-    margin: 9rem auto 0;
-}
-
 .portfolio-project {
-    padding: 3.5rem;
-    margin: 9rem 2.2rem;
+    margin: 0 auto;
+    padding: 2rem;
+
+    min-width: 42rem;
+    width: 80vw;
+    max-width: 84rem;
 
     background-color: var(--gray-0);
     border-radius: 3px;
@@ -127,36 +126,34 @@ footer {
     box-shadow: var(--shadow);
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 820px) {
     .portfolio-project {
-        display: grid;
-        grid-template-columns: 4fr 5fr;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5rem;
+        min-width: 30rem;
+        width: 35vw;
+        max-width: 55rem;
     }
+}
 
-    .portfolio-project_title {
-        margin-top: 0;
+@media (min-width: 1200px) {
+    .portfolio-project {
+        display: flex;
+        gap: 4rem;
+
+        width: 80vw;
+        max-width: 110rem;
+        height: 35rem;
     }
 }
 
 @media (min-width: 1400px) {
-    .portfolio-project-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-    }
-
     .portfolio-project {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0px;
+        display: block;
+
+        width: 25vw;
+        max-width: 30vw;
+        height: auto;
     }
 }
-
 /*--------------------------------- CONTACT ----------------------------------*/
 .form {
     width: 90%;

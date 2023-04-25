@@ -30,6 +30,24 @@
 }
 
 /* -------------------------------------------------------------------------- *
+ *                                 Containers 
+ * -------------------------------------------------------------------------- */
+.container--flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container--flex-wrap,
+.container-style-1 {
+    --vertical-gap: 9rem;
+    --horizontal-gap: 0rem;
+
+    row-gap: var(--vertical-gap);
+    column-gap: var(--horizontal-gap);
+    padding: var(--vertical-gap) var(--horizontal-gap);
+}
+/* -------------------------------------------------------------------------- *
  *                                    Chip
  * -------------------------------------------------------------------------- */
 .chip {
@@ -133,7 +151,7 @@
     font-family: 'Navbar Title', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     text-transform: uppercase;
 }
 
@@ -210,10 +228,10 @@
     text-shadow: var(--shadow--text);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 960px) {
     .navmenu {
         flex-direction: row;
-        gap: 4rem;
+        gap: 2rem;
         margin-top: 0;
         padding-left: 0;
         width: fit-content;
