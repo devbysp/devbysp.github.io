@@ -50,14 +50,15 @@ docker run -d -p 10000:80 portfolio
 
 ## Releases
 
-### v2.1
+### 3.0
 
+-   Creating Dokerfile
 -   Creating a readme
 
-### v2.0
+### 2.0
 
 -   Fixing review comments.
 
-### v1.0
+### 1.0
 
 -   Initial layout and styling of the portfolio page.
